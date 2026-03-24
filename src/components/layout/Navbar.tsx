@@ -19,7 +19,7 @@ export default function Navbar() {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <Link href="/#servicos" className="text-sm font-heading font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase">
+            <Link href="/servicos" className="text-sm font-heading font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase">
               Serviços
             </Link>
             <Link href="/#portfolio" className="text-sm font-heading font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase">

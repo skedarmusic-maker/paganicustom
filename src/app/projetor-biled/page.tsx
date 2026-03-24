@@ -16,9 +16,9 @@ export default function BiLedPage() {
         
         {/* Layer 0: Fundo Typográfico Massivo (Outline) */}
         <div className="absolute top-10 left-0 w-full overflow-hidden select-none pointer-events-none opacity-[0.03] z-0">
-           <h1 className="text-[15vw] leading-none font-heading font-black whitespace-nowrap outline-text text-transparent" style={{ WebkitTextStroke: '2px white' }}>
+           <div aria-hidden="true" className="text-[15vw] leading-none font-heading font-black whitespace-nowrap outline-text text-transparent" style={{ WebkitTextStroke: '2px white' }}>
              PROJETOR BI-LED PGN
-           </h1>
+           </div>
         </div>
 
         {/* Layer 1: Imagens Sobrepostas Fragmentadas */}
@@ -52,7 +52,7 @@ export default function BiLedPage() {
           <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.85] mb-8 mix-blend-difference">
             Instalação de <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/20" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.8)', color: 'black'}}>Projetores</span><br/>
-            <span className="text-primary">Bi-LED</span> na ilha.
+            <span className="text-primary">Bi-LED</span> em<br/>Florianópolis.
           </h1>
           
           <p className="text-xl md:text-2xl font-light max-w-2xl leading-relaxed text-white/90 border-l-2 border-primary pl-6">
