@@ -28,6 +28,9 @@ export default function Navbar() {
             <Link href="#faq" className="text-sm font-heading font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase">
               Dúvidas
             </Link>
+            <Link href="#contato" className="text-sm font-heading font-semibold text-white/80 hover:text-primary transition-colors tracking-widest uppercase">
+              Contato
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center">

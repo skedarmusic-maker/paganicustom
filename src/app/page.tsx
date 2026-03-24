@@ -4,6 +4,7 @@ import Services from "@/components/blocks/Services";
 import Portfolio from "@/components/blocks/Portfolio";
 import Testimonials from "@/components/blocks/Testimonials";
 import FAQ from "@/components/blocks/FAQ";
+import Contact from "@/components/blocks/Contact";
 
 export default function Home() {
   const localBusinessSchema = {
@@ -56,6 +57,7 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <FAQ />
+      <Contact />
     </>
   );
 }
