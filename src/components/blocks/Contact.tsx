@@ -93,8 +93,8 @@ export default function Contact() {
 
               <div className="space-y-2">
                 <label htmlFor="service" className="text-xs font-bold text-white/60 uppercase tracking-widest font-heading">Qual serviço deseja?</label>
-                <select id="service" className="w-full bg-black border border-white/20 p-4 text-white font-sans focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors rounded-none appearance-none">
-                  <option value="" disabled selected>Escolha uma opção</option>
+                <select id="service" defaultValue="" className="w-full bg-black border border-white/20 p-4 text-white font-sans focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors rounded-none appearance-none">
+                  <option value="" disabled>Escolha uma opção</option>
                   <option value="farol">Restauração/Personalização de Farol</option>
                   <option value="mascara-negra">Aplicação de Máscara Negra</option>
                   <option value="led">Instalação de LEDs</option>

@@ -1,24 +1,16 @@
+import Image from "next/image";
+
 export default function Services() {
   const services = [
     {
-      title: "Pintura Especial & Wrap",
-      desc: "Envelopamento premium e pinturas customizadas exclusivas. Acabamento espelhado e texturas táticas que transformam a carroceria.",
-      icon: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-    },
-    {
-      title: "Iluminação Automotiva",
-      desc: "Nossa marca registrada. Restauração de faróis, máscara negra, instalação de projetores, LEDs integrados e DRLs (Angel Eyes) sob medida.",
+      title: "Iluminação Auxiliar & Geral",
+      desc: "Restauração de faróis, máscara negra, instalação de LEDs integrados e DRLs (Angel Eyes) sob medida.",
       icon: "M13 10V3L4 14h7v7l9-11h-7z"
     },
     {
       title: "Performance & Remap",
       desc: "Otimização de ECU (Remap), sistemas de exaustão e ganhos reais de potência para quem exige desempenho além da estética.",
       icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-    },
-    {
-      title: "Interiores Customizados",
-      desc: "Revestimentos em couro nobre, costuras personalizadas, cintos esportivos e detalhes internos que respiram luxo e esportividade.",
-      icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
     },
     {
       title: "Rodas & Suspensão",
@@ -45,11 +37,49 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10">
+          
+          {/* Card Destaque: Projetor Bi-LED */}
+          <div className="lg:col-span-2 group relative bg-[#0a0a0a] border border-white/5 transition-all duration-500 hover:border-primary/50 overflow-hidden flex flex-col md:flex-row shadow-[0_4px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_0_40px_rgba(245,231,32,0.1)]">
+            <div className="absolute top-0 right-0 w-full h-[3px] bg-gradient-to-r from-transparent via-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-right z-20"></div>
+            
+            <div className="md:w-1/2 relative min-h-[300px] md:min-h-[400px] overflow-hidden">
+               <Image 
+                 src="/images/projetorbiled.jpeg" 
+                 alt="Instalação de Projetor Bi-LED" 
+                 fill 
+                 className="object-cover object-center grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" 
+               />
+               {/* Vignette Overlay */}
+               <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0a0a0a] via-transparent to-transparent z-10"></div>
+            </div>
+
+            <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-[#0a0a0a]">
+               <div className="inline-flex items-center space-x-2 mb-4">
+                 <span className="h-[2px] w-8 bg-primary"></span>
+                 <span className="text-primary font-bold tracking-widest uppercase text-xs">Carro Chefe</span>
+               </div>
+               
+               <h3 className="text-3xl md:text-4xl font-heading font-black text-white mb-4 uppercase tracking-tight group-hover:text-primary transition-colors">
+                 Projetores Bi-LED
+               </h3>
+               
+               <p className="text-white/60 font-sans text-lg leading-relaxed mb-8">
+                 Nossa especialidade máxima em iluminação automotiva. Transformação agressiva do sistema original utilizando blocos de Projetores Bi-LED de altíssima performance. 
+                 Garantimos um corte de luz milimétrico, potência luminosa massiva e visual premium que domina as ruas com segurança e estilo absolutos.
+               </p>
+               
+               <a href="/projetor-biled" className="inline-flex max-w-max items-center justify-center font-heading font-bold text-sm tracking-widest uppercase text-black bg-primary px-8 py-4 hover:bg-white hover:text-black transition-all duration-300">
+                 Ver Projeto Bi-LED
+               </a>
+            </div>
+          </div>
+
+          {/* Demais Serviços */}
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group relative bg-[#0a0a0a] border border-white/5 p-8 transition-all duration-500 hover:border-primary/50 hover:-translate-y-2 overflow-hidden"
+              className="group relative bg-[#0a0a0a] border border-white/5 p-8 transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 overflow-hidden"
             >
               {/* Headlight Flare Effect */}
               <div className="absolute -top-[150px] -right-[150px] w-[300px] h-[300px] bg-[radial-gradient(circle,_rgba(245,231,32,0.15)_0%,_transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
