@@ -133,8 +133,8 @@ export default function BiLedPage() {
 
             <div className="order-1 lg:order-2">
               <div className="sticky top-32">
-                <h2 className="text-[10vw] lg:text-[6rem] leading-none font-heading font-black text-white/5 uppercase break-words mb-8">
-                  COMO<br/>FUNCIO<br/>NA?
+                <h2 className="text-4xl md:text-5xl lg:text-[5rem] leading-none font-heading font-black text-white uppercase break-words mb-8">
+                  COMO<br/>FUNCI<br/>ONA?
                 </h2>
                 <div className="bg-zinc-900 border border-white/10 p-10 relative">
                   <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-primary -translate-y-1 translate-x-1"></div>

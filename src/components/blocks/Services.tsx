@@ -87,14 +87,14 @@ export default function Services() {
                   {service.title}
                 </h3>
                 
-                <p className="text-white/80 font-sans text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-white/95 font-sans text-sm leading-relaxed mb-6 flex-grow">
                   {service.desc}
                 </p>
 
                 {service.links && (
                   <div className="flex flex-col space-y-3 mt-auto shrink-0 border-t border-white/10 pt-4">
                     {service.links.map((link, idx) => (
-                      <a key={idx} href={link.url} className="inline-flex items-center text-xs font-heading font-bold uppercase tracking-widest text-white/50 hover:text-primary transition-colors group/link w-max">
+                      <a key={idx} href={link.url} className="inline-flex items-center text-xs font-heading font-bold uppercase tracking-widest text-white/70 hover:text-primary transition-colors group/link w-max">
                         {link.text}
                         <svg className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform opacity-0 group-hover/link:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

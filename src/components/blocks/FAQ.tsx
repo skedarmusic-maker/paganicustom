@@ -32,7 +32,7 @@ export default function FAQ() {
           <h2 className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-4">
             Dúvidas <span className="text-primary">Frequentes</span>
           </h2>
-          <p className="text-white/50 font-sans max-w-xl mx-auto">
+          <p className="text-white/80 font-sans max-w-xl mx-auto text-lg leading-relaxed">
             Transparência mecânica e técnica. Entenda o nosso processo de customização e alinhe suas expectativas de alto desempenho.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function FAQ() {
               <div 
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="px-6 pb-6 pt-0 text-white/70 font-sans leading-relaxed border-l-2 border-primary ml-6 mb-4">
+                <div className="px-6 pb-6 pt-0 text-white/90 font-sans leading-relaxed border-l-2 border-primary ml-6 mb-4 text-lg">
                   {faq.answer}
                 </div>
               </div>

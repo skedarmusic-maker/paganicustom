@@ -40,7 +40,7 @@ export default function Testimonials() {
                     </svg>
                   ))}
                 </div>
-                <span className="text-xs text-white/50 font-bold uppercase tracking-wider mt-1">40+ Avaliações</span>
+                <span className="text-xs text-white/80 font-bold uppercase tracking-wider mt-1">40+ Avaliações</span>
               </div>
               <div className="ml-4 pl-4 border-l border-white/20">
                  <svg className="w-6 h-6 text-white/80" fill="currentColor" viewBox="0 0 24 24">
@@ -63,10 +63,10 @@ export default function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-white/80 font-sans italic mb-8 leading-relaxed">&quot;{review.text}&quot;</p>
+              <p className="text-white/95 font-sans italic mb-8 leading-relaxed text-lg">&quot;{review.text}&quot;</p>
               <div className="flex justify-between items-center border-t border-white/10 pt-4">
                 <span className="text-white font-heading font-bold uppercase tracking-wide text-sm">{review.name}</span>
-                <span className="text-white/40 text-xs flex items-center gap-1 font-bold">
+                <span className="text-white/80 text-xs flex items-center gap-1 font-bold tracking-wider">
                   {review.date}
                 </span>
               </div>

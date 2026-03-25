@@ -30,7 +30,7 @@ export default function Portfolio() {
             <span className="border-text opacity-70">Prova Visual</span> <br/> O Portfólio
           </h2>
         </div>
-        <div className="md:text-right text-white/60 font-sans max-w-sm">
+        <div className="md:text-right text-white/90 font-sans max-w-sm">
           <p className="border-l-2 md:border-l-0 md:border-r-2 border-primary pl-4 md:pr-4 md:pl-0">
             Não contamos histórias, mostramos resultados. Centenas de veículos de elite modificados com o padrão Pagani.
           </p>

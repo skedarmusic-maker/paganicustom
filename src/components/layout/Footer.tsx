@@ -17,7 +17,7 @@ export default function Footer() {
                 className="object-contain object-left"
               />
             </Link>
-            <p className="text-white/70 font-sans max-w-sm">
+            <p className="text-white/90 font-sans max-w-sm mt-4 text-base">
               Especialistas em customização automotiva em Florianópolis-SC. Qualidade premium, atendimento personalizado e acabamento impecável.
             </p>
             <div className="flex space-x-4">
@@ -65,7 +65,7 @@ export default function Footer() {
                   <p className="font-bold text-white mb-1">Horário de Funcionamento:</p>
                   <p>Segunda - Sexta: 08:00 – 18:00</p>
                   <p>Sábado: 08:00 – 12:00</p>
-                  <p className="text-white/50">Domingo: Fechado</p>
+                  <p className="text-white/70 font-bold">Domingo: Fechado</p>
                 </div>
               </li>
             </ul>
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-sans text-white/50">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-sans text-white/80">
           <p>&copy; {new Date().getFullYear()} Pagani Custom Floripa. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">Desenvolvido com excelência automobilística.</p>
         </div>
