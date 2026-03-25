@@ -12,7 +12,7 @@ export default function BiLedPage() {
     <article className="bg-black min-h-screen font-sans text-white/90 overflow-hidden">
       
       {/* 1. HERO MASSIVO E BRUTALISTA (Sem centralização clichê) */}
-      <section className="relative w-full min-h-[90vh] flex flex-col justify-end pb-24 px-4 sm:px-6 lg:px-12 border-b border-white/10">
+      <section className="relative w-full flex flex-col justify-start md:justify-end pt-10 pb-12 md:min-h-[90vh] md:pb-24 px-4 sm:px-6 lg:px-12 border-b border-white/10">
         
         {/* Layer 0: Fundo Typográfico Massivo (Outline) */}
         <div className="absolute top-10 left-0 w-full overflow-hidden select-none pointer-events-none opacity-[0.03] z-0">
