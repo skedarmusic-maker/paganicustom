@@ -12,7 +12,7 @@ export default function MascaraNegraPage() {
     <article className="bg-[#030303] min-h-screen font-sans text-white/80 overflow-hidden pt-20">
       
       {/* 1. HERO BRUTALISTA ASSIMÉTRICO */}
-      <section className="relative w-full min-h-[90vh] flex flex-col justify-end pb-24 px-4 sm:px-6 lg:px-12 border-b border-white/10">
+      <section className="relative w-full flex flex-col justify-end pb-16 md:pb-24 pt-10 md:pt-0 md:min-h-[90vh] px-4 sm:px-6 lg:px-12 border-b border-white/10">
         
         {/* Layer 0: Fundo Typográfico Massivo (Outline Invisible to SEO) */}
         <div className="absolute top-10 right-0 w-full overflow-hidden select-none pointer-events-none opacity-[0.03] z-0 flex justify-end">
@@ -43,19 +43,19 @@ export default function MascaraNegraPage() {
         </div>
 
         {/* Layer 2: Conteúdo de Tensão Extrema (90/10 Ratio na Direita) */}
-        <div className="relative z-20 w-full flex justify-end mt-48 md:mt-0">
-          <div className="max-w-3xl text-right">
+        <div className="relative z-20 w-full flex justify-start md:justify-end">
+          <div className="max-w-3xl text-left md:text-right">
             <div className="inline-flex items-center justify-end space-x-3 mb-6 w-full">
               <span className="text-primary font-bold tracking-[0.3em] uppercase text-xs">Agressividade & Estética</span>
               <span className="h-[2px] w-16 bg-primary"></span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-8 mix-blend-difference">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-difference">
               Máscara <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/50 to-transparent" style={{ WebkitTextStroke: '1px white' }}>Negra</span> <br/>
               <span className="text-3xl md:text-5xl text-white/50 lowercase tracking-normal font-sans font-light">em Florianópolis.</span>
             </h1>
             
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-white/90 border-r-4 border-primary pr-6 ml-auto max-w-xl">
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-white/90 border-l-4 md:border-l-0 md:border-r-4 border-primary pl-6 md:pl-0 md:pr-6 md:ml-auto max-w-xl">
               Personalização Exclusiva e <strong className="text-white">Visual Esportivo</strong> autêntico.
             </p>
             

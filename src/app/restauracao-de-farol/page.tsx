@@ -29,9 +29,9 @@ export default function RestauracaoFarolPage() {
               <span className="text-primary font-bold tracking-[0.2em] uppercase text-xs">Proteção UV Extrema</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-8 mix-blend-difference">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-difference">
               Restauração <span className="text-primary block mt-2">de Faróis</span>
-              <span className="text-2xl md:text-4xl text-white/60 font-light tracking-wide normal-case mt-4 block">em Florianópolis</span>
+              <span className="text-xl md:text-3xl text-white/60 font-light tracking-wide normal-case mt-3 block">em Florianópolis</span>
             </h1>
             
             <p className="text-xl md:text-2xl font-light max-w-xl leading-relaxed text-white/90 border-l-4 border-primary pl-6">

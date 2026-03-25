@@ -43,13 +43,13 @@ export default function BiLedPage() {
         </div>
 
         {/* Layer 2: Conteúdo de Tensão Assimétrica */}
-        <div className="relative z-20 max-w-4xl pt-10">
+        <div className="relative z-20 max-w-4xl pt-6 md:pt-10">
           <div className="inline-flex items-center space-x-2 mb-6">
             <span className="h-[2px] w-12 bg-primary"></span>
             <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm">UPGRADE PREMIUM</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.85] mb-8 mix-blend-difference">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-6 mix-blend-difference">
             Instalação de <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/20" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.8)', color: 'black'}}>Projetores</span><br/>
             <span className="text-primary">Bi-LED</span> em<br/>Florianópolis.

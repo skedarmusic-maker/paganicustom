@@ -12,7 +12,7 @@ export default function SobrePage() {
     <article className="bg-black min-h-screen font-sans text-white/80 overflow-hidden pt-20">
       
       {/* 1. HERO BRUTALISTA ASSIMÉTRICO */}
-      <section className="relative w-full min-h-[95vh] flex flex-col justify-end pb-24 px-4 sm:px-6 lg:px-12 border-b border-white/10">
+      <section className="relative w-full flex flex-col justify-end pb-16 md:pb-24 pt-12 md:pt-0 md:min-h-[95vh] px-4 sm:px-6 lg:px-12 border-b border-white/10">
         
         {/* Layer 0: Fundo Typográfico Massivo */}
         <div className="absolute top-[30%] left-[-10%] w-[120%] overflow-hidden select-none pointer-events-none opacity-[0.03] z-0">
@@ -45,19 +45,19 @@ export default function SobrePage() {
         </div>
 
         {/* Layer 2: Conteúdo Textual Brutalista (Esquerda) */}
-        <div className="relative z-20 w-full flex justify-start mt-64 md:mt-0">
+        <div className="relative z-20 w-full flex justify-start">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-3 mb-6 w-full">
               <span className="w-16 h-[2px] bg-primary"></span>
               <span className="text-primary font-bold tracking-[0.3em] uppercase text-xs">Nossa História & Essência</span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.85] mb-8 mix-blend-difference">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[7rem] font-heading font-black text-white uppercase tracking-tighter leading-[0.9] mb-6 md:mb-8 mix-blend-difference">
               O Padrão <span className="text-transparent" style={{ WebkitTextStroke: '2px #f5e720' }}>Pagani</span>
             </h1>
             
-            <p className="text-2xl md:text-3xl font-light leading-relaxed text-white/90 border-l-4 border-primary pl-6 mb-8 max-w-xl">
-              Mais de uma década ditando as regras da <strong className="text-white">Customização Automotiva</strong> em SC.
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-white/90 border-l-4 border-primary pl-6 mb-6 max-w-xl">
+              Mais de uma década ditando as regras da <strong className="text-white">Iluminação Automotiva</strong> em SC.
             </p>
             
             <p className="mt-8 text-lg font-sans text-white/90 leading-relaxed max-w-xl bg-black/50 p-6 border border-white/5 backdrop-blur-sm relative group">
