@@ -17,8 +17,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60"></div>
       </div>
 
-      {/* Car image — anchored to right-bottom, never clipped by text */}
-      <div className="absolute right-0 bottom-0 z-10 w-[55%] h-full pointer-events-none hidden lg:block">
+      {/* Car image — anchored to right-bottom, visible on mobile with opacity, restored on desktop */}
+      <div className="absolute right-0 bottom-0 z-10 w-[95%] lg:w-[55%] h-[60%] lg:h-full pointer-events-none opacity-25 lg:opacity-100 mix-blend-lighten lg:mix-blend-normal">
         <Image
           src="/images/Pagani Custom Floripa20250720-205113 site2.jpg"
           alt="Carro customizado pela Pagani Custom"
@@ -27,12 +27,14 @@ export default function Hero() {
           priority
         />
         {/* Fade-left so car doesn't fight with text */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent w-1/2"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 lg:via-black/50 to-transparent w-full lg:w-1/2"></div>
+        {/* Fade-top for mobile specifically to merge shadow */}
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-black/20 to-black lg:hidden"></div>
       </div>
 
       {/* Content — z-20 always above the car */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
-        <div className="max-w-[55%] lg:max-w-[50%] space-y-8">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 lg:py-20">
+        <div className="max-w-full lg:max-w-[50%] space-y-8">
 
           <div className="inline-block border border-primary/30 bg-primary/5 px-4 py-1.5 backdrop-blur-sm -skew-x-12">
             <span className="text-primary font-heading font-bold tracking-widest text-xs uppercase block skew-x-12">
