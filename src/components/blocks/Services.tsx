@@ -4,7 +4,7 @@ export default function Services() {
   const services = [
     {
       title: "Iluminação Auxiliar & Geral",
-      desc: "Restauração de faróis, máscara negra, instalação de LEDs integrados e DRLs (Angel Eyes) sob medida.",
+      desc: "Restauração de faróis, máscara negra, instalação de LEDs integrados e DRLs (Angel Eyes) sob medida com acabamento de fábrica.",
       icon: "M13 10V3L4 14h7v7l9-11h-7z",
       links: [
         { url: "/restauracao-de-farol", text: "Restauração de Faróis" },
@@ -12,21 +12,6 @@ export default function Services() {
         { url: "/instalacao-de-drl", text: "Instalação de DRL" },
         { url: "/angel-eyes", text: "Angel Eyes" }
       ]
-    },
-    {
-      title: "Performance & Remap",
-      desc: "Otimização de ECU (Remap), sistemas de exaustão e ganhos reais de potência para quem exige desempenho além da estética.",
-      icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-    },
-    {
-      title: "Rodas & Suspensão",
-      desc: "Fitment perfeito. Customização de rodas, pintura estática, molas esportivas e suspensão a ar montada com extrema precisão.",
-      icon: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-    },
-    {
-      title: "Estética Premium",
-      desc: "Polimento técnico, vitrificação de pintura e higienização detalhada. Deixamos seu carro com aparência superior à original de fábrica.",
-      icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
     }
   ];
 
@@ -38,7 +23,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter">
             Nossas <span className="text-primary">Especialidades</span>
           </h2>
-          <p className="mt-4 text-white/60 font-sans max-w-2xl mx-auto text-lg">
+          <p className="mt-4 text-white/85 font-sans max-w-2xl mx-auto text-lg">
             Muito além do básico. Cada serviço é um manifesto de agressividade estética e precisão milimétrica para seu carro.
           </p>
         </div>
@@ -70,7 +55,7 @@ export default function Services() {
                  Projetores Bi-LED
                </h3>
                
-               <p className="text-white/60 font-sans text-lg leading-relaxed mb-8">
+               <p className="text-white/90 font-sans text-lg leading-relaxed mb-8">
                  Nossa especialidade máxima em iluminação automotiva. Transformação agressiva do sistema original utilizando blocos de Projetores Bi-LED de altíssima performance. 
                  Garantimos um corte de luz milimétrico, potência luminosa massiva e visual premium que domina as ruas com segurança e estilo absolutos.
                </p>
@@ -102,7 +87,7 @@ export default function Services() {
                   {service.title}
                 </h3>
                 
-                <p className="text-white/60 font-sans text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-white/80 font-sans text-sm leading-relaxed mb-6 flex-grow">
                   {service.desc}
                 </p>
 

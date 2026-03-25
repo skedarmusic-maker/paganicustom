@@ -11,7 +11,7 @@ export default function Navbar() {
     { href: "/", label: "Início" },
     { href: "/sobre", label: "A Empresa" },
     { href: "/servicos", label: "Serviços" },
-    { href: "/#portfolio", label: "Portfólio" },
+    { href: "/portfolio", label: "Portfólio" },
     { href: "/contato", label: "Contato" },
   ];
 

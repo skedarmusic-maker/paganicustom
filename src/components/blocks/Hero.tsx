@@ -49,18 +49,18 @@ export default function Hero() {
               Premium
               <span className="absolute -inset-2 bg-primary/10 blur-2xl opacity-60 z-[-1]"></span>
             </span> <br />
-            <span className="text-2xl md:text-3xl lg:text-4xl tracking-normal text-white/50 block mt-4 font-light">
+            <span className="text-2xl md:text-3xl lg:text-4xl tracking-normal text-white/80 block mt-4 font-light">
               em Florianópolis
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/70 font-sans max-w-md font-light border-l-2 border-primary pl-6">
+          <p className="text-lg md:text-xl text-white/90 font-sans max-w-md font-light border-l-2 border-primary pl-6">
             Estética de elite, restauração de faróis e modificações exclusivas que vão além do convencional. Seu carro, nossas regras.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
-              href="#portfolio"
+              href="/portfolio"
               className="bg-primary text-black font-heading font-bold text-sm tracking-widest uppercase px-8 py-4 text-center hover:bg-white transition-colors duration-300 transform -skew-x-12 group"
             >
               <span className="block skew-x-12 group-hover:scale-105 transition-transform">Ver Projetos</span>

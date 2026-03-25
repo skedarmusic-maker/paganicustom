@@ -60,9 +60,9 @@ export default function SobrePage() {
               Mais de uma década ditando as regras da <strong className="text-white">Customização Automotiva</strong> em SC.
             </p>
             
-            <p className="mt-8 text-lg font-sans text-white/60 leading-relaxed max-w-xl bg-black/50 p-6 border border-white/5 backdrop-blur-sm relative group">
+            <p className="mt-8 text-lg font-sans text-white/90 leading-relaxed max-w-xl bg-black/50 p-6 border border-white/5 backdrop-blur-sm relative group">
               <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-700"></div>
-              A Pagani Custom nasceu da paixão visceral pelo detalhe automobilístico. Mais de 10 anos de experiência transformando o visual e a performance, entregando não apenas estética, mas pura engenharia e confiabilidade magnética para o seu carro, moto ou utilitário.
+              A Pagani Custom nasceu da paixão visceral pelo detalhe automobilístico. Mais de 10 anos de experiência transformando a iluminação e a estética ótica, entregando pura engenharia e confiabilidade absoluta para o seu carro, moto ou utilitário.
             </p>
           </div>
         </div>
@@ -80,11 +80,11 @@ export default function SobrePage() {
             <h2 className="text-4xl md:text-6xl font-heading font-black text-white uppercase tracking-tighter leading-none mb-8">
               Expertise <br/><span className="text-primary">Premium</span>
             </h2>
-            <p className="text-xl text-white/70 font-light leading-relaxed mb-8">
+            <p className="text-xl text-white/90 font-light leading-relaxed mb-8">
               Somos especialistas em customização automotiva irrestrita na região metropolitana de Florianópolis.
             </p>
-            <p className="text-lg text-white/50 font-light leading-relaxed mb-8 border-l border-white/20 pl-6 py-2">
-              Da iluminação frontal de altíssima tensão à estética impecável da carroceria. Cada projeto que entra em nosso galpão recebe tratamento individualizado. Qualidade premium, atendimento técnico agressivo e focado em detalhes invisíveis ao olho comum, resultando em um acabamento indubitavelmente superior.
+            <p className="text-lg text-white/80 font-light leading-relaxed mb-8 border-l border-white/20 pl-6 py-2">
+              Líder em iluminação frontal e personalização ótica premium em Florianópolis. Cada projeto que entra em nosso galpão recebe tratamento individualizado com foco em vedação, alinhamento e estética superior.
             </p>
           </div>
 
@@ -92,22 +92,22 @@ export default function SobrePage() {
             
             <div className="bg-black border border-white/10 p-6 flex flex-col justify-center min-h-[160px] group transition-all hover:border-primary/50">
               <h4 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-3">Iluminação Tecnológica</h4>
-              <p className="text-white/60 font-light text-sm">Instalação e reparo definitivo de projetores bi-led, lâmpadas LED premium e xenon.</p>
+              <p className="text-white/85 font-light text-sm">Instalação e reparo definitivo de projetores bi-led, lâmpadas LED premium e xenon.</p>
             </div>
             
             <div className="bg-black border border-white/10 p-6 flex flex-col justify-center min-h-[160px] group transition-all hover:border-primary/50 translate-y-4">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-sm mb-3 group-hover:text-primary transition-colors">Design Frontal</h4>
-              <p className="text-white/60 font-light text-sm">Restauração estrutural de faróis e aplicação customizada de Máscara Negra selada.</p>
+              <p className="text-white/85 font-light text-sm">Restauração estrutural de faróis e aplicação customizada de Máscara Negra selada.</p>
             </div>
 
             <div className="bg-black border border-white/10 p-6 flex flex-col justify-center min-h-[160px] group transition-all hover:border-primary/50">
               <h4 className="text-white font-bold tracking-[0.2em] uppercase text-sm mb-3 group-hover:text-primary transition-colors">Assinatura Luminosa</h4>
-              <p className="text-white/60 font-light text-sm">Instalação técnica de DRLs com fitas de LED duplas, Angel Eyes (Halo Rings) e faróis de milha.</p>
+              <p className="text-white/85 font-light text-sm">Instalação técnica de DRLs com fitas de LED duplas, Angel Eyes (Halo Rings) e faróis de milha.</p>
             </div>
 
             <div className="bg-black border border-white/10 p-6 flex flex-col justify-center min-h-[160px] group transition-all hover:border-primary/50 border-l-[3px] border-l-primary translate-y-4">
-              <h4 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-3">Gerais e Vitrificação</h4>
-              <p className="text-white/60 font-light text-sm">Personalizações automotivas gerais que protegem, blindam e valorizam o DNA do seu ativo.</p>
+              <h4 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-3">Vedação & Blindagem</h4>
+              <p className="text-white/85 font-light text-sm">Tratamento especializado que protege e evita infiltração, mantendo a integridade dos faróis.</p>
             </div>
 
           </div>
@@ -124,7 +124,7 @@ export default function SobrePage() {
             <h3 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tight leading-tight mb-10">
               "Aqui não vendemos peças ou lâmpadas.<br/> Nós assinamos um <span className="text-transparent" style={{ WebkitTextStroke: '1.5px #f5e720' }}>estado de espírito</span> automobilístico."
             </h3>
-            <p className="text-xl text-white/50 font-light max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 font-light max-w-2xl mx-auto">
               Seja o seu carro do dia a dia, uma moto esporte ou um utilitário calejado: quando passa pelas nossas portas em Florianópolis, sai carregando uma assinatura visual inconfundível.
             </p>
          </div>

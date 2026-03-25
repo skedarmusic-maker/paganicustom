@@ -15,8 +15,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Pagani Custom Floripa | Customização Automotiva Premium",
-  description: "Especialistas em customização automotiva em Florianópolis. Restauração de faróis, aplicação de máscara negra, LEDs, Estética Automotiva Premium e Projetos Exclusivos.",
-  keywords: ["customização automotiva", "Florianópolis", "Pagani Custom", "restauração de faróis", "LED automotivo", "estética automotiva", "envelopamento"],
+  description: "Especialistas em iluminação automotiva em Florianópolis. Restauração de faróis, aplicação de máscara negra, LEDs, Projetores Bi-LED e Estética de Faróis.",
+  keywords: ["customização automotiva", "Florianópolis", "Pagani Custom", "restauração de faróis", "LED automotivo", "projetor bi-led", "máscara negra"],
   authors: [{ name: "Pagani Custom" }],
   openGraph: {
     title: "Pagani Custom Floripa | Customização Premium",
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 export default function RootLayout({
   children,
@@ -42,6 +43,7 @@ export default function RootLayout({
         className={`${inter.variable} ${montserrat.variable} antialiased bg-black text-white flex flex-col min-h-screen pt-24`}
         suppressHydrationWarning
       >
+        <LocalBusinessSchema />
         <Navbar />
         <main className="flex-grow">
           {children}

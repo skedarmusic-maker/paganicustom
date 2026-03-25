@@ -72,9 +72,9 @@ export default function ServicosPage() {
              <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-6 uppercase tracking-tight group-hover:text-primary transition-colors">
                Projetores Bi-LED
              </h2>
-             <p className="text-white/70 font-sans text-lg leading-relaxed mb-10 max-w-md">
-               A evolução absoluta da iluminação automotiva. Substituição do sistema refletor original por blocos duplos de alta voltagem para potência visual insana e segurança térmica.
-             </p>
+             <p className="text-lg text-white/80 font-light leading-relaxed mb-8 border-l border-white/20 pl-6 py-2">
+              Líder em iluminação frontal e personalização ótica premium em Florianópolis. Cada projeto que entra em nosso galpão recebe tratamento individualizado com foco em vedação, alinhamento e estética superior.
+            </p>
              <Link href="/projetor-biled" className="inline-flex max-w-max items-center justify-center font-heading font-bold text-sm tracking-widest uppercase text-black bg-primary px-10 py-5 hover:bg-white transition-all duration-300 transform group-hover:-translate-y-1">
                Ver Especialidade Completa
              </Link>
@@ -125,16 +125,16 @@ export default function ServicosPage() {
           ))}
         </div>
 
-        {/* MENSAGEM AOS DEMAIS SERVIÇOS DO PORTFÓLIO */}
+        {/* FOOTER CALL TO ACTION */}
         <div className="mt-20 border border-white/5 bg-black p-12 text-center relative overflow-hidden group">
           <div className="absolute top-0 right-1/2 translate-x-1/2 w-1/2 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
-          <h2 className="text-2xl font-heading font-bold text-white uppercase tracking-widest mb-4">Outros Projetos</h2>
-          <p className="text-white/50 font-light max-w-2xl mx-auto">
-            Além do foco primordial em Iluminação de Alta Performance, também atuamos em estéticas selecionadas, customizações focadas em Performance (Remap) e Suspensão sob consulta estratégica.
+          <h2 className="text-2xl font-heading font-bold text-white uppercase tracking-widest mb-4">Transforme seu Veículo</h2>
+          <p className="text-white/80 font-light max-w-2xl mx-auto">
+            Referência em iluminação premium e customização ótica em Florianópolis. Seu projeto executado com precisão e materiais de elite.
           </p>
           <div className="mt-8">
-            <Link href="/contato" className="inline-block text-primary hover:text-white uppercase tracking-widest text-sm font-bold border-b border-primary/30 pb-1 transition-colors">
-              Conversar sobre um Projeto Específico
+            <Link href="/contato" className="inline-block text-primary hover:text-white uppercase tracking-widest text-sm font-bold border-b border-primary/30 pb-1 transition-colors font-heading">
+              Solicitar Orçamento Agora
             </Link>
           </div>
         </div>

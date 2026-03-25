@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function BiLedPage() {
   return (
-    <article className="bg-black min-h-screen font-sans text-white/80 overflow-hidden pt-20">
+    <article className="bg-black min-h-screen font-sans text-white/90 overflow-hidden">
       
       {/* 1. HERO MASSIVO E BRUTALISTA (Sem centralização clichê) */}
       <section className="relative w-full min-h-[90vh] flex flex-col justify-end pb-24 px-4 sm:px-6 lg:px-12 border-b border-white/10">
@@ -43,7 +43,7 @@ export default function BiLedPage() {
         </div>
 
         {/* Layer 2: Conteúdo de Tensão Assimétrica */}
-        <div className="relative z-20 max-w-4xl mt-32 md:mt-0">
+        <div className="relative z-20 max-w-4xl pt-10">
           <div className="inline-flex items-center space-x-2 mb-6">
             <span className="h-[2px] w-12 bg-primary"></span>
             <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm">UPGRADE PREMIUM</span>
@@ -55,13 +55,13 @@ export default function BiLedPage() {
             <span className="text-primary">Bi-LED</span> em<br/>Florianópolis.
           </h1>
           
-          <p className="text-xl md:text-2xl font-light max-w-2xl leading-relaxed text-white/90 border-l-2 border-primary pl-6">
+            <p className="text-xl md:text-2xl font-light max-w-2xl leading-relaxed text-white/95 border-l-2 border-primary pl-6">
             Iluminação e Estética de Alta Performance.
           </p>
         </div>
       </section>
 
-      {/* 2. PROBLEMA VS SOLUÇÃO (Texto flutuando sobre grid vazio - Layout 90/10) */}
+      {/* 2. PROBLEMA VS SOLUÇÃO */}
       <section className="py-32 px-4 sm:px-6 lg:px-12 relative border-b border-white/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5 relative h-[400px] lg:h-auto border border-white/5 grayscale hover:grayscale-0 transition-all duration-700">
@@ -78,7 +78,7 @@ export default function BiLedPage() {
             <h2 className="text-3xl font-heading font-black uppercase tracking-wide mb-8">
               A Modernização <span className="text-primary">Definitiva</span>
             </h2>
-            <div className="space-y-6 text-lg text-white/70 leading-relaxed font-light">
+            <div className="space-y-6 text-lg text-white/80 leading-relaxed font-light">
               <p>
                 Cansado de dirigir à noite com faróis fracos ou de usar lâmpadas de LED comuns que ofuscam os outros motoristas e reprovam em vistorias? A instalação de Projetores Bi-LED é a modernização definitiva para o sistema de iluminação do seu veículo.
               </p>
@@ -92,7 +92,6 @@ export default function BiLedPage() {
 
       {/* 3. GRID FRAGMENTADO DAS VANTAGENS */}
       <section className="py-32 px-4 sm:px-6 lg:px-12 bg-[#050505] relative overflow-hidden">
-        {/* Glow de fundo */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full pointer-events-none z-0"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
@@ -102,7 +101,7 @@ export default function BiLedPage() {
               <div className="relative group pl-8 md:pl-12 border-l border-white/10 hover:border-primary transition-colors duration-500">
                 <div className="absolute left-0 top-0 w-8 md:w-12 h-[1px] bg-white/10 group-hover:bg-primary transition-colors duration-500"></div>
                 <h3 className="text-2xl font-heading font-bold text-white uppercase mb-4 opacity-90">Linha de Corte Perfeita (Cut-off)</h3>
-                <p className="font-light text-white/60 leading-relaxed text-lg">
+                <p className="font-light text-white/80 leading-relaxed text-lg">
                   O grande diferencial técnico do projetor. Ele cria uma linha de corte nítida na projeção da luz, garantindo que a via seja iluminada ao máximo debaixo da linha de visão dos motoristas que vêm no sentido contrário. Isso elimina o ofuscamento e garante segurança total.
                 </p>
               </div>
@@ -110,7 +109,7 @@ export default function BiLedPage() {
               <div className="relative group pl-8 md:pl-12 border-l border-white/10 hover:border-primary transition-colors duration-500">
                 <div className="absolute left-0 top-0 w-8 md:w-12 h-[1px] bg-white/10 group-hover:bg-primary transition-colors duration-500"></div>
                 <h3 className="text-2xl font-heading font-bold text-white uppercase mb-4 opacity-90">Potência Instantânea</h3>
-                <p className="font-light text-white/60 leading-relaxed text-lg">
+                <p className="font-light text-white/80 leading-relaxed text-lg">
                   Ao contrário do Xenon, que demora alguns segundos para aquecer e atingir a cor ideal, o Bi-LED entrega 100% da sua capacidade luminosa de forma imediata (flash instantâneo).
                 </p>
               </div>
@@ -118,7 +117,7 @@ export default function BiLedPage() {
               <div className="relative group pl-8 md:pl-12 border-l border-white/10 hover:border-primary transition-colors duration-500">
                 <div className="absolute left-0 top-0 w-8 md:w-12 h-[1px] bg-white/10 group-hover:bg-primary transition-colors duration-500"></div>
                 <h3 className="text-2xl font-heading font-bold text-white uppercase mb-4 opacity-90">Aprovação em Vistorias</h3>
-                <p className="font-light text-white/60 leading-relaxed text-lg">
+                <p className="font-light text-white/80 leading-relaxed text-lg">
                   Por respeitar a geometria correta de iluminação e não espalhar a luz de forma desordenada (como os "kits LED" baratos fazem), o feixe de luz focado do projetor é o padrão exigido para segurança viária.
                 </p>
               </div>
@@ -126,8 +125,8 @@ export default function BiLedPage() {
               <div className="relative group pl-8 md:pl-12 border-l border-white/10 hover:border-primary transition-colors duration-500">
                 <div className="absolute left-0 top-0 w-8 md:w-12 h-[1px] bg-white/10 group-hover:bg-primary transition-colors duration-500"></div>
                 <h3 className="text-2xl font-heading font-bold text-white uppercase mb-4 opacity-90">Durabilidade e Refrigeração</h3>
-                <p className="font-light text-white/60 leading-relaxed text-lg">
-                  Projetos de alta qualidade contam com corpo em alumínio de aviação e cooler (ventilador turbo) interno. Essa gestão térmica eficiente garante uma vida útil que pode ultrapassar as <strong className="text-white">50.000 horas</strong> de uso contínuo, sem derreter ou desgastar o cromo do farol com o tempo.
+                <p className="font-light text-white/80 leading-relaxed text-lg">
+                  Projetos de alta qualidade contam com corpo em alumínio de aviação e cooler (ventilador turbo) interno. Essa gestão térmica eficiente garante uma vida útil que pode ultrapassar as <strong className="text-white">50.000 horas</strong> de uso contínuo.
                 </p>
               </div>
             </div>
@@ -139,10 +138,10 @@ export default function BiLedPage() {
                 </h2>
                 <div className="bg-zinc-900 border border-white/10 p-10 relative">
                   <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-primary -translate-y-1 translate-x-1"></div>
-                  <p className="text-xl font-light text-white/80 leading-relaxed relative z-10">
-                    O sistema Bi-LED integra o chip de LED de alta potência e a lente projetora em uma única peça compacta, dispensando o uso de lâmpadas soltas, reatores complexos ou conversores externos. 
+                  <p className="text-xl font-light text-white/90 leading-relaxed relative z-10">
+                    O sistema Bi-LED integra o chip de LED de alta potência e a lente projetora em uma única peça compacta. 
                     <br/><br/>
-                    O termo <span className="text-primary font-bold">"Bi"</span> refere-se à capacidade do mesmo projetor realizar as funções de farol baixo e farol alto com precisão imediata, utilizando um mecanismo interno que altera o foco da luz em frações de segundo.
+                    O termo <span className="text-primary font-bold">"Bi"</span> refere-se à capacidade do mesmo projetor realizar as funções de farol baixo e farol alto com precisão imediata.
                   </p>
                   
                   <div className="mt-12 w-full h-64 relative border border-white/10 grayscale hover:grayscale-0 transition-duration-700">
@@ -161,18 +160,14 @@ export default function BiLedPage() {
         </div>
       </section>
 
-      {/* 4. FOOTER AUTHORITY & CTA (Tipografia Forte) */}
+      {/* 4. FOOTER AUTHORITY & CTA */}
       <section className="py-32 px-4 sm:px-6 lg:px-12 border-t border-white/10 bg-black flex flex-col items-center justify-center text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black uppercase text-white tracking-tight mb-8 max-w-5xl">
           Especialistas em Customização Automotiva em <span className="text-primary">Florianópolis</span>
         </h2>
         
-        <p className="text-xl text-white/60 font-light max-w-3xl mb-16 leading-relaxed">
-          Dirigir pela Grande Florianópolis exige atenção redobrada. Seja enfrentando a neblina frequente da SC-401, chuvas intensas na BR-101 ou vias mal iluminadas nos bairros da Ilha e Continente, uma iluminação de qualidade não é apenas estética, é questão de segurança.
-          <br/><br/>
-          Nossa oficina em Florianópolis é especializada na <strong className="text-white">abertura segura de faróis</strong>, instalação não destrutiva de módulos Bi-LED (preservando a integridade original para os padrões H4, H7, entre outros) e <strong className="text-white">alinhamento milimétrico do feixe de luz.</strong>
-          <br/><br/>
-          Garantimos um visual incrivelmente moderno para o seu carro, com vedação perfeita contra água e poeira, entregando um acabamento impecável que parece ter saído direto da fábrica.
+        <p className="text-xl text-white/80 font-light max-w-3xl mb-16 leading-relaxed">
+          Nossa oficina em Florianópolis é especializada na <strong className="text-white">abertura segura de faróis</strong> e instalação não destrutiva de módulos Bi-LED.
         </p>
 
         <Link 
