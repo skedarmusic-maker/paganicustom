@@ -42,15 +42,15 @@ export default function ServicosPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* HEADER DO CATÁLOGO */}
-        <div className="mb-20 text-center lg:text-left">
+        <div className="mb-16 text-center lg:text-left">
           <div className="inline-flex items-center space-x-3 mb-6 justify-center lg:justify-start w-full">
             <span className="w-8 h-[2px] bg-primary"></span>
             <span className="text-primary font-bold tracking-[0.3em] uppercase text-xs">Catálogo de Alta Performance</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-heading font-black text-white uppercase tracking-tighter leading-none mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-black text-white uppercase tracking-tighter leading-tight mb-6">
             Nossas <span className="text-transparent" style={{ WebkitTextStroke: '2px #f5e720' }}>Especialidades</span>
           </h1>
-          <p className="text-xl text-white/60 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Selecione a área do seu projeto. Muito além do básico, cada serviço é executado com precisão cirúrgica para transformar a estética e a funcionalidade do seu veículo.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function ServicosPage() {
              <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black via-black/80 lg:via-transparent to-transparent z-10"></div>
           </div>
           
-          <div className="lg:w-2/5 p-10 lg:p-14 flex flex-col justify-center relative z-20 bg-black lg:bg-transparent lg:absolute right-0 top-0 h-full lg:w-1/2">
+          <div className="lg:w-2/5 px-6 py-10 sm:p-10 lg:p-14 flex flex-col justify-center relative z-20 bg-black lg:bg-transparent lg:absolute right-0 top-0 h-full lg:w-1/2">
              <h4 className="text-sm font-bold text-primary tracking-[0.2em] uppercase mb-4">Projeto Signature</h4>
              <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-6 uppercase tracking-tight group-hover:text-primary transition-colors">
                Projetores Bi-LED
