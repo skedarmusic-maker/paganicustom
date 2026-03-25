@@ -31,6 +31,7 @@ export const metadata: Metadata = {
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 
 export default function RootLayout({
   children,
@@ -45,6 +46,7 @@ export default function RootLayout({
       >
         <LocalBusinessSchema />
         <Navbar />
+        <FloatingWhatsApp />
         <main className="flex-grow">
           {children}
         </main>

@@ -53,12 +53,12 @@ export default function Authority() {
 
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
               <div>
-                <span className="block text-4xl lg:text-5xl text-primary font-heading font-black mb-1">4.9+</span>
-                <span className="text-sm text-white/60 uppercase tracking-widest font-semibold">Avaliações</span>
+                <span className="block text-4xl lg:text-5xl text-primary font-heading font-black mb-1">5.0</span>
+                <span className="text-sm text-white/80 uppercase tracking-widest font-semibold">Nota Google</span>
               </div>
               <div>
-                <span className="block text-4xl lg:text-5xl text-white font-heading font-black mb-1">Elite</span>
-                <span className="text-sm text-white/60 uppercase tracking-widest font-semibold">Acabamento</span>
+                <span className="block text-4xl lg:text-5xl text-white font-heading font-black mb-1">40+</span>
+                <span className="text-sm text-white/80 uppercase tracking-widest font-semibold">Avaliações</span>
               </div>
             </div>
           </div>
