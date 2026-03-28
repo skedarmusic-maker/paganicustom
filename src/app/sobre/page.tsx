@@ -60,10 +60,10 @@ export default function SobrePage() {
               Mais de uma década ditando as regras da <strong className="text-white">Iluminação Automotiva</strong> em SC.
             </p>
             
-            <p className="mt-8 text-lg font-sans text-white/90 leading-relaxed max-w-xl bg-black/50 p-6 border border-white/5 backdrop-blur-sm relative group">
+            <div className="mt-8 text-lg font-sans text-white/90 leading-relaxed max-w-xl bg-black/50 p-6 border border-white/5 backdrop-blur-sm relative group">
               <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-700"></div>
               A Pagani Custom nasceu da paixão visceral pelo detalhe automobilístico. Mais de 10 anos de experiência transformando a iluminação e a estética ótica, entregando pura engenharia e confiabilidade absoluta para o seu carro, moto ou utilitário.
-            </p>
+            </div>
           </div>
         </div>
 

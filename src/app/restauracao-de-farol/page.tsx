@@ -42,9 +42,8 @@ export default function RestauracaoFarolPage() {
             </p>
           </div>
 
-          <div className="lg:col-span-5 relative h-[50vh] lg:h-[80vh] w-full z-10 order-1 lg:order-2 group perspective-1000">
-             {/* Main Image with geometric cut */}
-             <div className="absolute top-0 right-0 w-full h-[80%] border-t border-r border-white/20 overflow-hidden transform transition-all duration-700 hover:rotate-y-[5deg] hover:scale-105 shadow-[0_0_50px_rgba(245,231,32,0.05)] hover:shadow-[0_0_80px_rgba(245,231,32,0.15)]">
+          <div className="lg:col-span-5 relative h-[50vh] lg:h-[70vh] w-full z-10 order-1 lg:order-2 group">
+             <div className="w-full h-full border border-white/20 overflow-hidden relative shadow-[0_0_50px_rgba(245,231,32,0.05)] hover:shadow-[0_0_80px_rgba(245,231,32,0.15)]">
                <Image 
                  src="/images/rest%20farol/restauracao%20de%20farol.jpeg" 
                  alt="Processo de Restauração de Farol - Policarbonato" 
@@ -52,17 +51,7 @@ export default function RestauracaoFarolPage() {
                  className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
                  priority
                />
-               <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent"></div>
-             </div>
-             
-             {/* Overlapping secondary image (Brutalist composition) */}
-             <div className="absolute bottom-10 left-[-10%] w-[70%] h-1/2 border border-primary/50 bg-black overflow-hidden z-20 hover:scale-105 transition-transform duration-500 shadow-2xl">
-                <Image 
-                  src="/images/rest%20farol/restauracao%20de%20farol2.jpeg" 
-                  alt="Resultado final da restauração de farol" 
-                  fill 
-                  className="object-cover hover:scale-110 transition-transform duration-1000"
-                />
+               <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-transparent pointer-events-none"></div>
              </div>
           </div>
           
@@ -70,9 +59,9 @@ export default function RestauracaoFarolPage() {
       </section>
 
       {/* 2. THE PROBLEM (Asymmetric Layout) */}
-      <section className="py-24 px-4 sm:px-6 lg:px-12 bg-black relative">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center justify-between gap-16">
-          <div className="md:w-1/2 space-y-8 relative z-10">
+      <section className="py-24 px-4 sm:px-6 lg:px-12 bg-black relative border-y border-white/5">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+          <div className="lg:w-1/2 space-y-8 relative z-10">
             <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tight leading-tight">
               Por que os faróis ficam <span className="text-primary italic">amarelos</span> e foscos?
             </h2>
@@ -89,10 +78,17 @@ export default function RestauracaoFarolPage() {
             </div>
           </div>
 
-          <div className="md:w-1/3 text-left border-l-4 border-white/10 pl-8">
-            <div className="text-[8rem] font-heading font-black text-white/5 leading-none">UV</div>
-            <p className="text-primary font-bold uppercase tracking-widest mt-[-20px] mb-2 z-10 relative">O Inimigo Invisível</p>
-            <p className="text-sm text-white/40">Ataque químico e radiação solar destroem a estética da sua frente frontal diariamente.</p>
+          <div className="lg:w-1/2 relative h-[500px] lg:h-[700px] w-full border border-white/5 bg-[#0a0a0a] group overflow-hidden shadow-2xl flex items-center justify-center">
+             <Image 
+               src="/images/rest%20farol/restauracao%20de%20farol2.jpeg" 
+               alt="Exemplo do resultado final da restauração de um farol - Antes e Depois" 
+               fill 
+               className="object-contain transition-opacity duration-700"
+             />
+             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"></div>
+             <div className="absolute bottom-6 left-6 bg-black/80 px-6 py-3 border-l-2 border-primary backdrop-blur-sm z-20">
+                <span className="text-white text-xs font-heading font-bold uppercase tracking-widest block">Análise Comparativa Pagani</span>
+             </div>
           </div>
         </div>
       </section>

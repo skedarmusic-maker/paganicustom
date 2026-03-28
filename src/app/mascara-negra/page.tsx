@@ -21,24 +21,19 @@ export default function MascaraNegraPage() {
            </div>
         </div>
 
-        {/* Layer 1: Conflito de Imagens (Z-Axis Depth) */}
-        <div className="absolute top-32 left-0 w-[80vw] lg:w-[40vw] h-[60vh] z-10 hidden md:block perspective-1000">
-          <div className="relative w-full h-full transform transition-all duration-1000 rotate-y-[15deg] rotate-x-[5deg] hover:rotate-y-[5deg] origin-left shadow-2xl">
+        {/* Layer 1: Imagem única limpa */}
+        <div className="absolute top-24 left-0 w-[80vw] lg:w-[42vw] h-[72vh] z-10 hidden md:block">
+          <div className="relative w-full h-full shadow-[0_0_80px_rgba(0,0,0,0.9)]">
              <Image 
                src="/images/mascaranegra/mascaranegra.jpeg" 
                alt="Farol modificado com Máscara Negra em Florianópolis" 
                fill 
-               className="object-cover border-r-4 border-b-4 border-primary/20 grayscale hover:grayscale-0 transition-all duration-700"
+               className="object-cover border-r border-b border-primary/20 grayscale hover:grayscale-0 transition-all duration-700"
                priority
              />
-             <div className="absolute -bottom-16 -right-16 w-3/4 h-1/2 border border-white/10 bg-black overflow-hidden z-20 hover:scale-110 transition-transform duration-700 shadow-[0_0_50px_rgba(0,0,0,0.8)] mix-blend-luminosity hover:mix-blend-normal">
-                <Image 
-                  src="/images/mascaranegra/mascaranegra2.jpeg" 
-                  alt="Detalhe pintura interna máscara negra" 
-                  fill 
-                  className="object-cover"
-                />
-             </div>
+             {/* Fade para integrar com o fundo escuro */}
+             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#030303]"></div>
+             <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent"></div>
           </div>
         </div>
 
@@ -66,36 +61,46 @@ export default function MascaraNegraPage() {
         </div>
       </section>
 
-      {/* 2. O QUE É? (Brutal Typography Bloc) */}
+      {/* 2. O QUE É? (Texto + Segunda Imagem ao Lado) */}
       <section className="py-24 px-4 sm:px-6 lg:px-12 bg-black border-b border-white/5">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
-          <div className="lg:w-5/12 sticky top-32">
-            <h2 className="text-4xl md:text-6xl font-heading font-black text-white uppercase tracking-tighter leading-none mb-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          {/* Texto explicativo */}
+          <div className="space-y-8 order-2 lg:order-1">
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter leading-none">
               O que é a<br/>
               <span className="text-primary italic border-b-2 border-primary pb-2">Máscara Negra</span><br/>
               Profissional?
             </h2>
-            <div className="w-16 h-16 bg-white/5 flex items-center justify-center border border-white/10 mt-12 animate-pulse hidden lg:flex">
-              <svg className="w-8 h-8 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </div>
-          </div>
-          
-          <div className="lg:w-7/12 space-y-12">
-            <div className="bg-[#050505] border border-white/10 p-10 hover:border-primary/30 transition-colors duration-500 relative group overflow-hidden">
+
+            <div className="bg-[#050505] border border-white/10 p-8 hover:border-primary/30 transition-colors duration-500 relative group overflow-hidden">
                <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-l from-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-right duration-700"></div>
-               <p className="text-lg text-white/70 leading-relaxed font-light">
+               <p className="text-base text-white/70 leading-relaxed font-light">
                  A customização consiste na <strong className="text-white">abertura técnica</strong> do conjunto ótico para a pintura minuciosa das molduras internas (partes não refletivas) em tons de preto fosco, acetinado ou o requintado <i>Black Piano</i>.
                </p>
             </div>
 
-            <div className="bg-[#050505] p-10 border-l-4 border-primary relative">
-               <p className="text-lg text-white/80 leading-relaxed font-light relative z-10">
-                 Diferente de soluções amadoras, fitas ou "sprays" aplicados por fora, o nosso processo é interno e definitivo. Pintamos <strong className="text-primary uppercase tracking-widest text-sm mx-1">apenas as partes estéticas</strong>, mantendo os copos refletores absolutamente intactos para que o alcance e a segurança da sua luz noturna não sejam prejudicados.
+            <div className="bg-[#050505] p-8 border-l-4 border-primary relative">
+               <p className="text-base text-white/80 leading-relaxed font-light relative z-10">
+                 Diferente de soluções amadoras, fitas ou &quot;sprays&quot; aplicados por fora, o nosso processo é interno e definitivo. Pintamos <strong className="text-primary uppercase tracking-widest text-sm mx-1">apenas as partes estéticas</strong>, mantendo os copos refletores absolutamente intactos para que o alcance e a segurança da sua luz noturna não sejam prejudicados.
                </p>
             </div>
           </div>
+
+          {/* Segunda imagem — resultado real, sem corte */}
+          <div className="relative h-[420px] lg:h-[580px] w-full bg-[#080808] border border-white/5 group overflow-hidden order-1 lg:order-2">
+            <Image
+              src="/images/mascaranegra/mascaranegra2.jpeg"
+              alt="Resultado da Máscara Negra - Pintura interna de farol em Florianópolis"
+              fill
+              className="object-contain transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+            <div className="absolute bottom-5 left-5 bg-black/80 px-5 py-2 border-l-2 border-primary backdrop-blur-sm z-10">
+              <span className="text-white text-xs font-heading font-bold uppercase tracking-widest">Resultado Real · Pagani Custom</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
