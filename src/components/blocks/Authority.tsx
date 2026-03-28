@@ -1,4 +1,5 @@
 import Image from "next/image";
+import sobreImg from "../../../../public/images/sobre.jpeg";
 
 export default function Authority() {
   return (
@@ -8,9 +9,9 @@ export default function Authority() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          <div className="relative h-[600px] w-full border border-white/10 group overflow-hidden">
+          <div className="relative h-[400px] md:h-[600px] w-full border border-white/10 group overflow-hidden">
             <Image
-              src="/images/248725428_125106863238380_1667197108738426195_n..jpg"
+              src={sobreImg}
               alt="Especialista trabalhando na estética automotiva Pagani Custom"
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-[2s] scale-100 group-hover:scale-105"
