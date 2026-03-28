@@ -25,13 +25,13 @@ export default function ServicosPage() {
       title: "Instalação de DRL",
       desc: "Luz de rodagem diurna em LED com seta sequencial/Dual Color. Mais segurança diurna e estética Premium.",
       link: "/instalacao-de-drl",
-      image: "" // Placeholder ready as requested
+      image: "/images/drl.jpeg" // Updated with project image
     },
     {
       title: "Angel Eyes (Halo)",
       desc: "Anéis luminosos de LED Crystal/RGB inspirados nas montadoras alemãs para uma assinatura luminosa exclusiva.",
       link: "/angel-eyes",
-      image: "" // Placeholder ready as requested
+      image: "/images/angels.jpg" // Updated with project image
     }
   ];
 
@@ -81,40 +81,43 @@ export default function ServicosPage() {
           </div>
         </div>
 
-        {/* GRID DOS DEMAIS SERVIÇOS (Asymmetric Layout) */}
+        {/* GRID DOS DEMAIS SERVIÇOS (Full-bleed editorial cards) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {specializedServices.map((service, index) => (
             <Link 
               key={index} 
               href={service.link}
-              className="group relative bg-[#050505] border border-white/10 hover:border-white/40 transition-all duration-500 overflow-hidden flex flex-col min-h-[350px]"
+              className="group relative overflow-hidden flex flex-col min-h-[420px] border border-white/10 hover:border-primary/50 transition-all duration-500"
             >
-              {/* Image Banner top */}
-              <div className="w-full h-48 relative overflow-hidden bg-[#0A0A0A] border-b border-white/5">
+              {/* Full-bleed image — fills entire card */}
+              <div className="absolute inset-0">
                 {service.image ? (
                   <Image 
                     src={service.image} 
                     alt={service.title} 
                     fill 
-                    className="object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" 
+                    className="object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
                   />
                 ) : (
-                  <div className="absolute inset-0 flex items-center justify-center bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.02)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px]">
-                    <span className="text-white/20 font-heading tracking-widest uppercase text-[10px]">[ IMAGEM DE DEMONSTRAÇÃO RETIDA ]</span>
-                  </div>
+                  <div className="w-full h-full bg-[#0A0A0A]" />
                 )}
-                {/* Visual Glitch/Scanline */}
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-primary/50 shadow-[0_0_10px_#f5e720] -translate-y-[100px] group-hover:translate-y-[300px] transition-transform duration-[1.5s] ease-in-out"></div>
               </div>
-              
-              <div className="p-8 flex-grow flex flex-col">
-                <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-wide mb-4 transition-colors">
+
+              {/* Gradient overlay bottom-to-top so text is always readable */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/10 z-10" />
+
+              {/* Yellow scan line on hover */}
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-primary shadow-[0_0_10px_#f5e720] -translate-y-full group-hover:translate-y-[100%] transition-transform duration-[1200ms] ease-in-out z-20" />
+
+              {/* Text content — floating over the image at the bottom */}
+              <div className="relative z-20 mt-auto p-8">
+                <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-wide mb-3 transition-colors group-hover:text-primary">
                   {service.title}
                 </h3>
-                <p className="text-white/50 font-sans text-sm leading-relaxed flex-grow">
+                <p className="text-white/70 font-sans text-sm leading-relaxed mb-6 max-w-sm">
                   {service.desc}
                 </p>
-                <div className="mt-8 flex items-center text-xs font-heading font-bold uppercase tracking-widest text-primary">
+                <div className="flex items-center text-xs font-heading font-bold uppercase tracking-widest text-primary">
                   Saiba Mais
                   <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

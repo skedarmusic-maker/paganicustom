@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Angel Eyes em Florianópolis | Instalação de Halo Rings Premium',
@@ -47,26 +48,15 @@ export default function AngelEyesPage() {
           </div>
 
           <div className="lg:col-span-6 relative flex justify-end h-[50vh] lg:h-[70vh] w-full z-10 group perspective-1000">
-             {/* 
-               CAMPO MONTADO PARA A IMAGEM (ANGEL EYES)
-               Quando a foto for enviada, substituir toda esta div.
-             */}
-             <div className="w-full lg:w-[90%] h-full bg-[#050505] border border-white/10 relative overflow-hidden transition-all duration-700 shadow-[0_0_80px_rgba(245,231,32,0.05)] group-hover:shadow-[0_0_120px_rgba(245,231,32,0.1)] flex flex-col items-center justify-center transform group-hover:scale-[1.02]">
-                {/* Background Styling */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_0%,transparent_70%)] opacity-50"></div>
-                
-                {/* Visual Placeholder Graphic */}
-                <div className="relative w-48 h-48 rounded-full border border-dashed border-white/20 flex items-center justify-center animate-[spin_20s_linear_infinite]">
-                   <div className="w-40 h-40 rounded-full border border-primary/30"></div>
-                   <div className="absolute top-0 w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#f5e720]"></div>
-                </div>
-
-                <div className="absolute bottom-8 left-0 w-full text-center px-6">
-                  <span className="text-white/40 font-heading tracking-widest uppercase text-xs block bg-black/50 backdrop-blur-md py-2 border border-white/5">
-                    [ INSERIR FOTO DO ANGEL EYES AQUI ]
-                  </span>
-                </div>
-             </div>
+             <div className="w-full lg:w-[90%] h-full bg-[#050505] border border-white/10 relative overflow-hidden transition-all duration-700 shadow-[0_0_80px_rgba(245,231,32,0.1)] group-hover:shadow-[0_0_120px_rgba(245,231,32,0.2)] transform group-hover:scale-[1.02]">
+                <Image 
+                  src="/images/angels.jpg" 
+                  alt="Angel Eyes (Halo Rings) Pagani Custom Floripa" 
+                  fill 
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
           </div>
           
         </div>

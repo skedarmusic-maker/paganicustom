@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Instalação de DRL em Florianópolis | Luz Diurna e Seta Sequencial',
@@ -49,21 +50,14 @@ export default function DrlPage() {
                Quando o usuário tiver a foto, basta substituir esta div abaixo pelo formato padrão do Next.js:
                <Image src="/images/sua-foto.jpg" alt="..." fill className="object-cover" />
              */}
-             <div className="w-full h-[60vh] bg-[#0a0a0a] border border-white/10 relative overflow-hidden transition-all duration-700 transform group-hover:rotate-y-[-5deg] group-hover:shadow-[0_0_50px_rgba(255,255,255,0.05)] flex items-center justify-center">
-                <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.02)_50%,transparent_75%,transparent_100%)] bg-[length:40px_40px] opacity-20"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                
-                <div className="z-10 text-center border border-dashed border-white/20 p-8 m-8 backdrop-blur-sm">
-                  <svg className="w-12 h-12 text-white/20 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                  <span className="text-white/40 font-heading tracking-widest uppercase text-xs block">Espaço Reservado - Imagem DRL</span>
-                  <span className="text-white/20 text-[10px] mt-2 block font-sans">Aguardando upload (Substituir div por Image)</span>
-                </div>
-                
-                {/* Elemento de design imitando a fita LED contornando */}
-                <div className="absolute top-10 left-10 w-[2px] h-1/2 bg-white/50 blur-[2px]"></div>
-                <div className="absolute top-10 left-10 w-1/3 h-[2px] bg-white/50 blur-[2px]"></div>
+             <div className="w-full h-[60vh] bg-[#0a0a0a] border border-white/10 relative overflow-hidden transition-all duration-700 transform group-hover:rotate-y-[-5deg] group-hover:shadow-[0_0_50px_rgba(255,245,32,0.1)]">
+                <Image 
+                  src="/images/drl.jpeg" 
+                  alt="Instalação de DRL Pagani Custom Floripa" 
+                  fill 
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
              </div>
           </div>
           
