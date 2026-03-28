@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sobreImg from "../../../../public/images/sobre.jpeg";
+import sobreImg from "../../../public/images/sobre.jpeg";
 
 export default function Authority() {
   return (
