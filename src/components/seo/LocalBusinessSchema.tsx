@@ -50,7 +50,8 @@ export default function LocalBusinessSchema() {
       }
     ],
     "sameAs": [
-      "https://www.instagram.com/paganicustomfloripa/"
+      "https://www.instagram.com/paganicustomfloripa/",
+      "https://www.tiktok.com/@paganicustomfloripa"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

@@ -80,7 +80,7 @@ export default function BiLedPage() {
             </h2>
             <div className="space-y-6 text-lg text-white/80 leading-relaxed font-light">
               <p>
-                Cansado de dirigir à noite com faróis fracos ou de usar lâmpadas de LED comuns que ofuscam os outros motoristas e reprovam em vistorias? A instalação de Projetores Bi-LED é a modernização definitiva para o sistema de iluminação do seu veículo.
+                Cansado de dirigir à noite com faróis fracos ou de usar lâmpadas de LED comuns que ofuscam os outros motoristas e reprovam em vistorias? A instalação de Projetores Bi-LED é a modernização definitiva para o seu veículo (seja um VW Gol, Jetta, HR-V, ou picapes como F1000, F250 e L200 Triton).
               </p>
               <p>
                 Diferente da simples troca de lâmpadas em espelhos refletores originais, o projeto Bi-LED substitui o sistema interno do farol por um módulo ótico completo. O resultado é um feixe de luz denso, focado e com alcance até <strong className="text-white">300% maior</strong> que as lâmpadas halógenas convencionais.
@@ -179,6 +179,27 @@ export default function BiLedPage() {
         </Link>
       </section>
 
+      {/* JSON-LD Structured Data: Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Instalação de Projetor Bi-LED Automotivo",
+                "provider": {
+                  "@type": "AutoRepair",
+                  "name": "Pagani Custom Floripa"
+                },
+                "areaServed": "Florianópolis, SC",
+                "description": "Serviço premium de farol de LED e instalação de lentes de Projetores Bi-LED com linha de corte perfeita (Cut-off) para segurança viária e forte apelo estético."
+              }
+            ]
+          })
+        }}
+      />
     </article>
   );
 }

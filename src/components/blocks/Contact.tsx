@@ -6,9 +6,9 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="mb-16 text-center lg:text-left">
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-4">
+          <h1 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-4">
             Agende sua <span className="text-primary">Evolução</span>
-          </h2>
+          </h1>
           <p className="text-white/60 font-sans max-w-2xl text-lg">
             Sua visão, nossa execução. Preencha os detalhes e nossa equipe entrará em contato para transformar seu projeto em realidade.
           </p>
@@ -27,11 +27,11 @@ export default function Contact() {
                 </svg>
                 Onde Nos Encontrar
               </h3>
-              <p className="font-sans text-white/70 text-lg leading-relaxed">
-                R. Marcelino Cândido Machado, 79<br/>
-                Costeira do Pirajubaé<br/>
-                Florianópolis - SC, 88048-005
-              </p>
+              <address className="font-sans text-white/70 text-lg leading-relaxed not-italic">
+                <span itemProp="streetAddress">R. Marcelino Cândido Machado, 79</span><br/>
+                <span itemProp="addressLocality">Costeira do Pirajubaé</span><br/>
+                <span itemProp="addressRegion">Florianópolis - SC</span>, <span itemProp="postalCode">88048-005</span>
+              </address>
             </div>
 
             <div className="bg-zinc-900/50 border border-white/5 p-8 relative group hover:border-primary/30 transition-colors duration-500">

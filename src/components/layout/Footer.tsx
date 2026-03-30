@@ -85,11 +85,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-sans text-white/80">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-sans text-white/40 space-y-4 md:space-y-0">
           <p>&copy; {new Date().getFullYear()} Pagani Custom Floripa. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0">Desenvolvido com excelência automobilística.</p>
+          <p className="md:pr-24">
+            Desenvolvido por <a href="https://focusarts.com.br/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-white transition-colors font-medium">Focus&Arts</a>
+          </p>
         </div>
       </div>
+
     </footer>
   );
 }

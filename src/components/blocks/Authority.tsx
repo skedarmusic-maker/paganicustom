@@ -40,10 +40,10 @@ export default function Authority() {
             
             <div className="space-y-6 text-white/90 font-sans text-lg md:text-xl font-light">
               <p>
-                A <strong className="text-white font-semibold">Pagani Custom Floripa</strong> não é apenas uma oficina. Somos a referência em <strong className="text-primary font-medium">Estética Automotiva Premium</strong> e modificação de iluminação no Sul da Ilha.
+                Localizados estrategicamente na <strong className="text-white font-semibold">Costeira do Pirajubaé</strong>, no coração de Florianópolis, a Pagani Custom é muito mais que uma oficina. Somos a referência que atende toda a região (São José, Palhoça e Biguaçu) quando o assunto é <strong className="text-primary font-medium">Estética Automotiva e Especialista em Faróis</strong>.
               </p>
               <p>
-                Nascemos de uma obsessão inegociável por precisão técnica. Nosso laboratório foca na restauração de faróis, aplicação de máscara negra e instalação de LEDs e DRLs (Angel Eyes) que ditam a personalidade do seu veículo na rua.
+                Nascemos de uma obsessão inegociável por precisão técnica. Nosso laboratório foca na avaliação, polimento e restauração de faróis amarelados, aplicação de máscara negra e instalação de LEDs (incluindo lâmpadas H7) e DRLs que ditam a personalidade do seu veículo na rua.
               </p>
               <blockquote className="border-l-4 border-primary bg-white/5 pl-6 pr-4 py-4 italic text-white/90 text-base md:text-lg backdrop-blur-sm -skew-x-6">
                 <span className="block skew-x-6">

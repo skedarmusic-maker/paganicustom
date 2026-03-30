@@ -81,7 +81,7 @@ export default function DrlPage() {
           
           <div className="md:w-1/2 flex items-center">
             <p className="text-xl text-white/80 font-light leading-relaxed">
-              Além do indiscutível fator segurança, a instalação de fitas de LED <span className="text-primary font-bold">Dual Color</span> ou módulos DRL integrados transforma radicalmente a estética frontal, dando ao carro um aspecto muito mais moderno e <strong className="text-white">"Premium"</strong>, brutalmente similar aos modelos recém-lançados das grandes montadoras globais.
+              Além do indiscutível fator segurança, a instalação de fitas de LED <span className="text-primary font-bold">Dual Color</span> ou módulos DRL integrados transforma radicalmente a estética frontal, dando ao seu veículo (como hatches populares tipo VW Polo e Ônix, sedans ou picapes como Fiat Toro e Hilux) um aspecto muito mais moderno e <strong className="text-white">"Premium"</strong>, brutalmente similar aos modelos recém-lançados das grandes montadoras globais.
             </p>
           </div>
         </div>
@@ -234,6 +234,56 @@ export default function DrlPage() {
         </div>
       </section>
 
+      {/* JSON-LD Structured Data: Service & FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Instalação de DRL (Luz de Rodagem Diurna) e Fita de LED",
+                "provider": {
+                  "@type": "AutoRepair",
+                  "name": "Pagani Custom Floripa"
+                },
+                "areaServed": "Florianópolis, SC",
+                "description": "Instalação profissional de fitas de LED Dual Color (Seta Sequencial) e módulos DRL (Daytime Running Light) com vedação rigorosa e estética premium."
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "O DRL substitui o farol baixo à noite?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Não. O DRL é um sistema exclusivo para uso diurno. À noite, o sistema deve reduzir a intensidade ou desligar ao acionar o farol principal."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "A instalação elétrica do DRL corta fios originais do carro?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Nós priorizamos instalações 'Plug & Play' ou derivações blindadas, preservando a integridade física do chicote original do seu carro."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "O silicone da fita de LED do DRL vai amarelar com o sol?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Trabalhamos exclusivamente com polímeros industriais que possuem eficiência anti-UV natural, evitando o amarelamento precoce de fitas de menor qualidade."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
     </article>
   );
 }

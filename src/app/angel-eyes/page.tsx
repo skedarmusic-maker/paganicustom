@@ -209,7 +209,7 @@ export default function AngelEyesPage() {
           Customização de Faróis na <br/>Grande <span className="text-primary">Florianópolis</span>
         </h2>
         <p className="text-xl text-white/60 font-light max-w-3xl mb-12 leading-relaxed">
-          Seja para um BMW, VW, Honda ou qualquer marca, nossa oficina entrega o acabamento puro que parece ter saído direto da engenharia da linha de montagem. O destino impiedoso para entusiastas que buscam o equilíbrio perfeito entre estética agressiva e confiabilidade técnica rigorosa.
+          Seja para um BMW original, projetos em VW (como Golf, Jetta, Fusca e os clássicos Gol G4/G5), Honda Civic ou qualquer marca, nossa oficina entrega o acabamento puro que parece ter saído direto da engenharia da linha de montagem. O destino impiedoso para entusiastas que buscam o equilíbrio perfeito entre estética agressiva e confiabilidade técnica rigorosa na instalação de Angel Eyes (Halo Rings).
         </p>
         <Link 
           href="/contato" 
@@ -274,6 +274,56 @@ export default function AngelEyesPage() {
         </div>
       </section>
 
+      {/* JSON-LD Structured Data: Service & FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Instalação de Angel Eyes e Halo Rings em Faróis",
+                "provider": {
+                  "@type": "AutoRepair",
+                  "name": "Pagani Custom Floripa"
+                },
+                "areaServed": "Florianópolis, SC",
+                "description": "Customização automotiva premium com instalação de anéis luminosos Angel Eyes (Halo Rings) em LED Crystal e RGB, com vedação estanque contra umidade."
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Angel Eye consome muita bateria do carro?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Absolutamente não. A altíssima eficiência da tecnologia LED consome uma fração irrisória e mínima de energia em comparação às lâmpadas originais."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Posso ser multado por usar Angel Eyes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Quando configurado como circuito de luz de posição estética e na cor branca, não, desde que você não anule as funções de sinalização noturnas originais de farol baixo."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "O brilho dos Anéis de LED diminui com o tempo?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Trabalhando puramente com placas SMD/Cob de alta qualidade e com dissipação térmica eficiente, nós mantemos a intensidade brilhante do LED por anos de uso."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
     </article>
   );
 }

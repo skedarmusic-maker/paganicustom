@@ -219,7 +219,7 @@ export default function RestauracaoFarolPage() {
         </h2>
         
         <p className="text-xl text-white/60 font-light max-w-3xl mb-12 leading-relaxed z-10 relative">
-          Localizados estrategicamente em Florianópolis, atendemos proprietários de veículos nacionais e importados que recusam o amadorismo e buscam o padrão insano de acabamento que as concessionárias e centros de estética premium exigem. Se você busca durabilidade e um serviço técnico de verdade, sua busca termina exatamente aqui.
+          Localizados estrategicamente em Florianópolis, atendemos proprietários de veículos nacionais e importados (projetos ideais para VW Gol, Hyundai HB20, Honda Civic, Toyota Corolla e utilitários) que recusam o amadorismo e buscam o padrão insano de acabamento que as concessionárias e centros de estética premium exigem. Se você busca durabilidade e um serviço técnico de verdade em polimento de farol, sua busca termina exatamente aqui.
         </p>
 
         <Link 
@@ -236,6 +236,56 @@ export default function RestauracaoFarolPage() {
         </Link>
       </section>
 
+    {/* JSON-LD Structured Data: Service & FAQ */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": "Restauração de Faróis Automotivos e Polimento",
+              "provider": {
+                "@type": "AutoRepair",
+                "name": "Pagani Custom Floripa"
+              },
+              "areaServed": "Florianópolis, SC",
+              "description": "Serviço de restauração profissional de faróis com lixamento úmido escalonado, proteção UV e vitrificação duradoura."
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Quanto tempo dura a restauração?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Com a nossa aplicação agressiva de proteção UV/Vitrificação, o resultado de transparência cristalina pode durar de 1 a 2 anos inteiros."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "O serviço remove riscos profundos da lente?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim, devido ao nosso sistema de lixamento úmido escalonado, conseguimos nivelar a superfície com segurança para remover a imensa maioria dos riscos superficiais."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Posso fazer o processo em faróis de vidro?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Não. Todo este processo químico e abrasivo foi arquitetado exclusivamente para lentes de Policarbonato."
+                  }
+                }
+              ]
+            }
+          ]
+        })
+      }}
+    />
     </article>
   );
 }

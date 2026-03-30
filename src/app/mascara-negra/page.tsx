@@ -196,7 +196,7 @@ export default function MascaraNegraPage() {
         </h2>
         
         <p className="text-xl text-white/60 font-light max-w-3xl mb-12 leading-relaxed">
-          Seja para um projeto purista <strong className="text-white">JDM</strong>, elegância <strong className="text-white">Eurolook</strong> ou apenas para quebrar o excesso de cromado (chrome delete) do seu carro do dia a dia, nossa equipe entrega cirurgicamente o acabamento perfeito que o seu projeto exige. Atendemos entusiastas criteriosos de toda a região que não abrem mão de qualidade técnica e estética impecável.
+          Seja para um projeto purista <strong className="text-white">JDM</strong>, elegância <strong className="text-white">Eurolook</strong> ou apenas para quebrar o excesso de cromado (chrome delete) do seu carro (customização muito procurada para linha VW Gol G5/G6, Polo, Chevrolet Montana, Honda Civic e picapes), nossa equipe entrega cirurgicamente o acabamento perfeito que o seu veículo exige. Atendemos entusiastas criteriosos de toda a região que não abrem mão de qualidade técnica e estética impecável.
         </p>
 
         <Link 
@@ -241,6 +241,56 @@ export default function MascaraNegraPage() {
         </div>
       </section>
 
+      {/* JSON-LD Structured Data: Service & FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Customização Máscara Negra para Faróis",
+                "provider": {
+                  "@type": "AutoRepair",
+                  "name": "Pagani Custom Floripa"
+                },
+                "areaServed": "Florianópolis, SC",
+                "description": "Pintura interna de molduras de faróis (Máscara Negra) em estilo fosco, acetinado ou Black Piano com vedação hidrofóbica e tintas de alta temperatura."
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "A Máscara Negra diminui a potência da minha iluminação?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Não, em hipótese alguma. Nós mascaramos e pintamos apenas as molduras externas e acabamentos plásticos que não fazem parte do sistema ótico de reflexão."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "O farol corre o risco de entrar água ou suar por dentro?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Não com o nosso método. Utilizamos vedação gabaritada e profissional com colas de butil específicas para faróis."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Quanto tempo leva o serviço?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "O processo responsável geralmente leva de 1 a 2 dias úteis de internação do veículo, devido aos tempos de cura, estufa e vedação."
+                    }
+                  }
+                ]
+              }
+            ]
+          })
+        }}
+      />
     </article>
   );
 }
