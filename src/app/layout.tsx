@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
+  verification: {
+    google: "IRgzYgjU7ueUeEUa60nl0iSt6n1nduNMEGWjq18FmZk",
+  },
 };
 
 import Navbar from "@/components/layout/Navbar";
