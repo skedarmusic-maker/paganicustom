@@ -37,6 +37,6 @@ jobs:
         password: 1q2w3e4r@@@SK
         port: 21
         local-dir: ./out/
-        server-dir: /public_html/
+        server-dir: /
         dangerous-clean-slate: true
         # Clean-slate deletará TUDO na pastinha public_html do Hostinger e colocará SÓ os arquivos fresquinhos do Build. Ideal!
