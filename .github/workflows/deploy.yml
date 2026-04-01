@@ -29,12 +29,12 @@ jobs:
     - name: Realizando Upload via FTP (SamKirkland)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: 147.93.14.87
-        username: u786839041.paganicustomsite
+        server: "147.93.14.87"
+        username: "u786839041.paganicustomsite"
         # ATENÇÃO: É fortemente recomendado usar "$\{\{ secrets.FTP_PASSWORD \}\}" no lugar da senha aberta. 
         # Crie na aba Settings > Secrets and Variables > Actions:
         # Colocamos direto aqui temporariamente para aprovação rápida de estresse!
-        password: 1q2w3e4r@@@SK
+        password: "1q2w3e4r@@@SK"
         port: 21
         local-dir: ./out/
         server-dir: /
