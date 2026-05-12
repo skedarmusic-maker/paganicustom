@@ -1,37 +1,31 @@
 import * as ftp from "basic-ftp";
 
 async function deploy() {
-    console.log("Connecting to FTP...");
     const client = new ftp.Client();
     client.ftp.verbose = true;
     try {
+        console.log("Connecting to FTP...");
         await client.access({
-            host: "ftp.mediumblue-butterfly-118465.hostingersite.com",
-            user: "u786839041.paganicustom",
+            host: "147.93.14.87",
+            user: "u786839041.paganicustomsite",
             password: "1q2w3e4r@@@SK",
-            secure: true,
-            secureOptions: { rejectUnauthorized: false }
+            port: 21,
+            secure: false
         });
-        
-        console.log("\nNavigation to public_html...");
-        
-        try {
-            await client.cd("public_html");
-        } catch (e) {
-            console.log("Could not cd to public_html, it may not exist or we are already inside it.");
-            // We might already be inside the public_html directory depending on Hostinger FTP isolation.
-        }
 
-        console.log("\nUploading project files from the /out folder...");
+        console.log("Navigating to root folder. Uploading contents of local 'out/' folder...");
+
+        // Upload the contents of 'out' (files + folders) inside root
         await client.uploadFromDir("out");
-        
-        console.log("\nDeploy completed successfully! All assets uploaded to Hostinger.");
+
+        console.log("Upload completed successfully! Deployment is done.");
     }
     catch(err) {
-        console.log("\nDetailed Error during FTP Process:");
-        console.error(err);
+        console.error("Error during deployment:", err);
     }
-    client.close();
+    finally {
+        client.close();
+    }
 }
 
 deploy();
