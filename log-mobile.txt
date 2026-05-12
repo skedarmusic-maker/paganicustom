@@ -1,0 +1,2 @@
+﻿a78f6d04cc68542835ce8bd8fd272c0ff3b03217 feat: redesign services and portfolio pages for better image visibility and mobile responsiveness
+9b56b503db5e5ba810f3b2e1a3c19d718cd2896d fix: mobile responsiveness across all pages - remove dead spaces and scale headings

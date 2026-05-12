@@ -1,0 +1,5 @@
+﻿98138734d2e6ca59ea60e7a24fc625f165e35f04 fix: add Google Search Console verification tag and update Vapor de Polimero methodology across site
+fc0bec015e05ff9696afb6a3da4392ba5d739648 feat(seo): schema FAQ JSON-LD e long-tail nas paginas de servico, H1 na contato, remove schema duplicado do footer, TikTok no sameAs, ajuste footer layout
+279faea111581cef14cee8e302e8ccede1b32086 fix: separate overlapping images in mascara-negra, restauracao-de-farol, authority and sobre pages
+600395428084bd00f888a0f214594a2c81885e20 fix(Authority): correct relative path for image import
+0e06e5cb9d331adb74d93b044a9194b1db446c43 fix(Authority): use static image import for 'sobre.jpeg' to bypass browser caching and 404s
