@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import sobreImg from "../../../public/images/sobre.jpeg";
 
 export default function Authority() {
@@ -32,7 +33,7 @@ export default function Authority() {
             <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-primary"></div>
             <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-primary"></div>
           </div>
-
+ 
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white uppercase tracking-tighter leading-[1.1]">
               Mais de 10 anos <span className="border-text block mt-2 opacity-80">transformando</span> projetos
@@ -40,7 +41,7 @@ export default function Authority() {
             
             <div className="space-y-6 text-white/90 font-sans text-lg md:text-xl font-light">
               <p>
-                Localizados estrategicamente na <strong className="text-white font-semibold">Costeira do Pirajubaé</strong>, no coração de Florianópolis, a Pagani Custom é muito mais que uma oficina. Somos a referência que atende toda a região (São José, Palhoça e Biguaçu) quando o assunto é <strong className="text-primary font-medium">Estética Automotiva e Especialista em Faróis</strong>.
+                Localizados estrategicamente na <strong className="text-white font-semibold">Costeira do Pirajubaé</strong>, no coração de Florianópolis, a Pagani Custom é muito mais que uma oficina. Somos a referência que atende toda a região (São José, Palhoça e Biguaçu) quando o assunto é <Link href="/customizacao-automotiva" className="text-primary hover:underline font-medium">customização automotiva perto de você</Link> e Especialista em Faróis.
               </p>
               <p>
                 Nascemos de uma obsessão inegociável por precisão técnica. Nosso laboratório foca na avaliação, polimento e restauração de faróis amarelados, aplicação de máscara negra e instalação de LEDs (incluindo lâmpadas H7) e DRLs que ditam a personalidade do seu veículo na rua.

@@ -81,7 +81,7 @@ export default function SobrePage() {
               Expertise <br/><span className="text-primary">Premium</span>
             </h2>
             <p className="text-xl text-white/90 font-light leading-relaxed mb-8">
-              Somos especialistas em customização automotiva irrestrita na região metropolitana de Florianópolis.
+              Somos especialistas em <Link href="/customizacao-automotiva" className="text-primary hover:underline font-semibold">customização automotiva perto de você</Link> na região metropolitana de Florianópolis.
             </p>
             <p className="text-lg text-white/80 font-light leading-relaxed mb-8 border-l border-white/20 pl-6 py-2">
               Líder em iluminação frontal e personalização ótica premium em Florianópolis. Cada projeto que entra em nosso galpão recebe tratamento individualizado com foco em vedação, alinhamento e estética superior.
