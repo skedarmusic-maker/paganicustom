@@ -45,10 +45,10 @@ export default function ProtecaoFarolPage() {
           <div className="lg:col-span-5 relative h-[50vh] lg:h-[70vh] w-full z-10 order-1 lg:order-2 group">
             <div className="w-full h-full border border-white/20 overflow-hidden relative shadow-[0_0_50px_rgba(245,231,32,0.05)] hover:shadow-[0_0_80px_rgba(245,231,32,0.15)]">
               <Image
-                src="/images/protecao-farol.png"
-                alt="Proteção de Farol com PPF - Pagani Custom"
+                src="/images/Logo_on_wall_and_uniform_202605122312.jpeg"
+                alt="Pagani Custom Floripa - Especialistas em Estética Automotiva"
                 fill
-                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
+                className="object-cover object-center hover:scale-105 transition-all duration-1000"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-transparent pointer-events-none"></div>

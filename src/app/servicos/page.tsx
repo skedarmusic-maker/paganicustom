@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 export default function ServicosPage() {
   const specializedServices = [
     {
+      title: "Proteção de Farol",
+      desc: "Aplicação de película PPF premium para proteção absoluta contra impactos de pedras, riscos e amarelecimento precoce.",
+      link: "/protecao-de-farol",
+      image: "/images/rest farol/restauracao de farol2.jpeg"
+    },
+    {
       title: "Restauração de Faróis",
       desc: "Devolução da transparência original do policarbonato com proteção UV e vitrificação de longa duração.",
       link: "/restauracao-de-farol",

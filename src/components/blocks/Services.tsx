@@ -8,6 +8,7 @@ export default function Services() {
       icon: "M13 10V3L4 14h7v7l9-11h-7z",
       links: [
         { url: "/restauracao-de-farol", text: "Restauração de Faróis" },
+        { url: "/protecao-de-farol", text: "Proteção de Faróis" },
         { url: "/mascara-negra", text: "Máscara Negra" },
         { url: "/instalacao-de-drl", text: "Instalação de DRL" },
         { url: "/angel-eyes", text: "Angel Eyes" }
