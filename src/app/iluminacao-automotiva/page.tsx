@@ -140,6 +140,11 @@ export default function Page() {
           <p className="mt-3 max-w-2xl mx-auto text-gray-300">
             Eleve o padrão de segurança e estética do seu veículo com quem é autoridade no mercado premium.
           </p>
+          <div className="mt-8">
+            <a
+              href="https://api.whatsapp.com/send?phone=5548000000000&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20ilumina%C3%A7%C3%A3o%20automotiva."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-black font-heading font-bold py-4 px-10 rounded-lg text-lg hover:bg-primary-hover transition-colors duration-300"
             >
               Falar no WhatsApp
