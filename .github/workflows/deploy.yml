@@ -20,6 +20,28 @@ jobs:
         node-version: 20
         cache: 'npm'
 
+name: Deploy para Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixando código-fonte (Checkout)
+      uses: actions/checkout@v4
+      
+    - name: Configurando Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+
     - name: Instalando dependências (NPM)
       run: npm ci --legacy-peer-deps
 
