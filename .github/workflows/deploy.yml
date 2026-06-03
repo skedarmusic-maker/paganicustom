@@ -53,4 +53,4 @@ jobs:
         FTP_HOST: "147.93.14.87"
         FTP_USER: "u786839041.paganicustomsite"
         FTP_PASSWORD: "1q2w3e4r@@@SK"
-      run: node fix_deploy.mjs
+      run: node deploy.mjs
