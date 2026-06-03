@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projetor-biled",
     "/restauracao-de-farol",
     "/conserto-drl-amarelado-audi-vw",
+    "/melhorar-farol-fraco-projetor-bi-led",
   ];
 
   return routes.map((route) => ({
