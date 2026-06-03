@@ -57,7 +57,7 @@ export default function DRLAmareladoPage() {
             </h1>
             
             <p className="text-lg md:text-xl font-light leading-relaxed text-white/80 border-l-4 md:border-l-0 md:border-r-4 border-primary pl-6 md:pl-0 md:pr-6 md:ml-auto max-w-xl">
-              Se você é dono de um Audi, Volkswagen, BMW, ou até mesmo modelos como Fiat Toro e Peugeot 208, talvez já tenha notado um problema frustrante: o DRL (luz de condução diurna) começa a ficar amarelado, perde a força ou apaga de vez. Isso não é mau uso, é um defeito crônico comum nesses sistemas de iluminação originais.
+              Se você é dono de um Audi, Volkswagen, BMW, ou até mesmo modelos como Fiat Toro e Peugeot 208, talvez já tenha notado um problema frustrante: o DRL (luz de condução diurna) começa a ficar amarelado, perde a força ou apaga de vez. Isso não é mau uso, é um defeito crônico comum nesses sitemas de iluminação originais.
             </p>
 
             <div className="mt-10 flex justify-start md:justify-end">
@@ -194,6 +194,27 @@ export default function DRLAmareladoPage() {
         </div>
       </section>
 
+      {/* 3.5 CROSS-SELLING: UPGRADE DE PROJETOR BI-LED */}
+      <section className="py-20 px-4 sm:px-6 lg:px-12 bg-[#080808] border-t border-b border-white/5 text-center flex flex-col items-center justify-center">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="text-primary font-heading font-bold uppercase tracking-widest text-xs">Oportunidade Única</span>
+          <h3 className="text-2xl md:text-3xl font-heading font-black uppercase text-white tracking-tight leading-tight">
+            Aproveitando que vamos abrir o farol para consertar o DRL, que tal fazer um upgrade na iluminação principal?
+          </h3>
+          <p className="text-white/60 font-light max-w-2xl mx-auto text-base">
+            Multiplique a potência dos seus faróis baixos e altos e garanta foco perfeito no asfalto com nossos projetores de última geração.
+          </p>
+          <div className="pt-4">
+            <Link 
+              href="/projetor-bi-led/" 
+              className="text-white hover:text-primary transition-colors font-heading font-bold uppercase tracking-wider text-sm border-b border-white hover:border-primary pb-2"
+            >
+              Conheça nossos Projetores Bi-LED →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 4. FOOTER / CTA PRINCIPAL */}
       <section className="py-24 px-4 sm:px-6 lg:px-12 bg-black border-t border-white/10 text-center flex flex-col items-center justify-center">
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-black uppercase text-white tracking-tight mb-6 max-w-5xl">
@@ -220,7 +241,7 @@ export default function DRLAmareladoPage() {
         </a>
       </section>
 
-      {/* Schema JSON-LD para SEO local */}
+      {/* Schema JSON-LD para SEO local e FAQs */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -228,22 +249,63 @@ export default function DRLAmareladoPage() {
             "@context": "https://schema.org",
             "@graph": [
               {
+                "@type": "AutoRepair",
+                "@id": "https://paganicustomfloripa.com.br/#localbusiness",
+                "name": "Pagani Custom Floripa",
+                "image": "https://paganicustomfloripa.com.br/images/logo.png",
+                "telePhone": "+554832495596",
+                "url": "https://paganicustomfloripa.com.br",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "R. Marcelino Cândido Machado, 79",
+                  "addressLocality": "Florianópolis",
+                  "addressRegion": "SC",
+                  "postalCode": "88048-005",
+                  "addressCountry": "BR"
+                },
+                "areaServed": {
+                  "@type": "AdministrativeArea",
+                  "name": "Florianópolis"
+                }
+              },
+              {
                 "@type": "Service",
                 "name": "Conserto e Recuperação de DRL de Farol Automotivo",
                 "provider": {
                   "@type": "AutoRepair",
-                  "name": "Pagani Custom Floripa",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "R. Marcelino Cândido Machado, 79",
-                    "addressLocality": "Florianópolis",
-                    "addressRegion": "SC",
-                    "postalCode": "88048-005",
-                    "addressCountry": "BR"
-                  }
+                  "name": "Pagani Custom Floripa"
                 },
                 "areaServed": "Florianópolis, SC",
                 "description": "Especialistas em conserto de DRL de LED amarelado ou queimado de Audi, VW, BMW, Fiat Toro e Peugeot 208 em Florianópolis com substituição de chips de alta durabilidade."
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "DRL amarelado do Audi tem conserto?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sim! A Pagani Custom é especialista no conserto e recuperação de DRL de LED amarelado ou fraco de Audi, VW e BMW em Florianópolis, restaurando a cor branca original de fábrica com chips de alta durabilidade."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Preciso trocar o farol inteiro da concessionária quando o DRL fica amarelo?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Não. Concessionárias sugerem trocar o farol completo, custando milhares de reais. Nós abrimos o farol com ferramentas próprias e trocamos apenas a placa de LED queimada e os acrílicos amarelados por uma fração desse valor."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Há garantia contra infiltração de água após abrir o farol?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sim! Na Pagani Custom Floripa, utilizamos vedação hidrofóbica com cola de poliuretano específica para faróis de padrão original. Oferecemos garantia completa contra infiltrações ou embaçamento."
+                    }
+                  }
+                ]
               }
             ]
           })

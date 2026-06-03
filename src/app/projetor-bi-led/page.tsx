@@ -195,6 +195,27 @@ export default function ProjetorBiLEDUpgradePage() {
         </div>
       </section>
 
+      {/* 3.5 CROSS-SELLING: CONSERTO DRL AMARELADO AUDI/VW */}
+      <section className="py-20 px-4 sm:px-6 lg:px-12 bg-[#080808] border-t border-b border-white/5 text-center flex flex-col items-center justify-center">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="text-primary font-heading font-bold uppercase tracking-widest text-xs">Estética e Valorização</span>
+          <h3 className="text-2xl md:text-3xl font-heading font-black uppercase text-white tracking-tight leading-tight">
+            O DRL em LED do seu Audi, VW ou BMW está amarelado, fraco ou apagado?
+          </h3>
+          <p className="text-white/60 font-light max-w-2xl mx-auto text-base">
+            Somos especialistas no conserto do DRL amarelado de veículos premium. Aproveite o retrofit de iluminação para corrigir esse defeito crônico estético.
+          </p>
+          <div className="pt-4">
+            <Link 
+              href="/conserto-drl-amarelado/" 
+              className="text-white hover:text-primary transition-colors font-heading font-bold uppercase tracking-wider text-sm border-b border-white hover:border-primary pb-2"
+            >
+              Conheça nosso Serviço de Recuperação de DRL →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 4. FOOTER / CTA PRINCIPAL */}
       <section className="py-24 px-4 sm:px-6 lg:px-12 bg-black border-t border-white/10 text-center flex flex-col items-center justify-center relative">
         
@@ -302,7 +323,7 @@ export default function ProjetorBiLEDUpgradePage() {
                     "name": "DRL amarelado do Audi tem conserto?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Sim! A Pagani Custom é especialista no conserto e recuperação de DRL de LED amarelado ou fraco de Audi, VW e BMW em Florianópolis, restaurando a cor branca original sem precisar comprar um farol novo na concessionária."
+                      "text": "Sim! A Pagani Custom é especialista no conserto e recuperação de DRL de LED amarelado ou fraco de Audi, VW e BMW em Florianópolis, restaurando a cor branca original de fábrica com chips de alta durabilidade."
                     }
                   }
                 ]

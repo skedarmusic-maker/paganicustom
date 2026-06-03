@@ -14,10 +14,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/angel-eyes",
     "/instalacao-de-drl",
     "/mascara-negra",
-    "/projetor-biled",
     "/restauracao-de-farol",
-    "/conserto-drl-amarelado-audi-vw",
-    "/melhorar-farol-fraco-projetor-bi-led",
+    "/conserto-drl-amarelado",
+    "/projetor-bi-led",
   ];
 
   return routes.map((route) => ({
