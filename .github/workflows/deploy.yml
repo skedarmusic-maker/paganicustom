@@ -26,17 +26,9 @@ jobs:
     - name: Gerando Build Estático Next.js (out/)
       run: npm run build
 
-    - name: Realizando Upload via FTP (SamKirkland)
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: "147.93.14.87"
-        username: "u786839041.paganicustomsite"
-        # ATENÇÃO: É fortemente recomendado usar "$\{\{ secrets.FTP_PASSWORD \}\}" no lugar da senha aberta. 
-        # Crie na aba Settings > Secrets and Variables > Actions:
-        # Colocamos direto aqui temporariamente para aprovação rápida de estresse!
-        password: "1q2w3e4r@@@SK"
-        port: 21
-        local-dir: ./out/
-        server-dir: /
-        dangerous-clean-slate: true
-        # Clean-slate deletará TUDO na pastinha public_html do Hostinger e colocará SÓ os arquivos fresquinhos do Build. Ideal!
+    - name: Realizando Upload via FTP (Script customizado)
+      env:
+        FTP_HOST: "147.93.14.87"
+        FTP_USER: "u786839041.paganicustomsite"
+        FTP_PASSWORD: "1q2w3e4r@@@SK"
+      run: node fix_deploy.mjs

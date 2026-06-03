@@ -6,9 +6,9 @@ async function run() {
     try {
         console.log("Conectando ao FTP...");
         await client.access({
-            host: "147.93.14.87",
-            user: "u786839041.paganicustomsite",
-            password: "1q2w3e4r@@@SK",
+            host: process.env.FTP_HOST || "147.93.14.87",
+            user: process.env.FTP_USER || "u786839041.paganicustomsite",
+            password: process.env.FTP_PASSWORD || "1q2w3e4r@@@SK",
             port: 21,
             secure: false
         });
