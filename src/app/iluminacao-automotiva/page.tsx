@@ -1,190 +1,156 @@
-import { Metadata } from 'next';
-
-// Ícones SVG inline — sem dependência de lucide-react
-const Lightbulb = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M15 14c.2-1 .7-1.7 1.5-2.5C17.9 10.6 18 9.3 18 8A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" />
-  </svg>
-);
-const Paintbrush = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" /><path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7" /><path d="M14.5 17.5 4.5 15" />
-  </svg>
-);
-const Sparkles = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
-  </svg>
-);
-const ShieldCheck = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.8 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" />
-  </svg>
-);
-const Award = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
-  </svg>
-);
+import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Iluminação Automotiva de Elite em Florianópolis | Pagani Custom",
-  description: "Descubra a arte da iluminação automotiva de precisão na Pagani Custom Floripa. Projetores Bi-LED, customização ótica, máscara negra e restauração de faróis.",
-  keywords: ["iluminação automotiva", "farol de led", "projetor bi-led florianópolis", "máscara negra", "restauração de farol", "pagani custom", "florianópolis"],
+  description: "Descubra a arte da iluminação automotiva de precisão na Pagani Custom Floripa. Projetores Bi-LED, customização ótica e restauração de faróis com padrão de fábrica.",
+  openGraph: {
+    title: "Iluminação Automotiva de Elite | Pagani Custom Floripa",
+    description: "Eleve o padrão de segurança e estética do seu veículo com quem é autoridade no mercado premium de iluminação automotiva.",
+    url: "https://paganicustom.com.br/iluminacao-automotiva", // Assuming this will be the final URL
+  },
 };
 
+const FeatureIcon = ({ path }: { path: string }) => (
+  <div className="h-14 w-14 bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-white group-hover:text-primary group-hover:border-primary/30 transition-all duration-500 transform group-hover:rotate-[-5deg] shrink-0">
+    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d={path} />
+    </svg>
+  </div>
+);
+
 export default function Page() {
+  const services = [
+    {
+      title: "A Revolução dos Projetores Bi-LED Signature",
+      description: "Nosso serviço de assinatura foca na implementação de projetores Bi-LED de última geração. Com uma temperatura de cor de 6000K, entregamos uma iluminação 300% superior aos sistemas originais, garantindo uma visibilidade sem precedentes em qualquer condição climática. O diferencial reside na nossa técnica de instalação plug-and-play, que preserva a integridade elétrica do veículo, aliada a um alinhamento perfeito do feixe e uma vedação técnica que elimina qualquer risco de infiltração.",
+      iconPath: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z",
+    },
+    {
+      title: "Customização Ótica e Assinatura Luminosa",
+      description: "Para aqueles que buscam exclusividade, oferecemos soluções de customização que redefinem a identidade visual do carro. Especialistas em acabamentos sofisticados, executamos a Máscara Negra com pintura interna em Black Piano ou fosco, além da instalação de DRL (Daytime Running Lights) com seta sequencial dual-color. Nossos Angel Eyes (Halo Rings) são inspirados na sofisticação das marcas premium alemãs, conferindo uma assinatura luminosa única e imponente.",
+      iconPath: "M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z",
+    },
+    {
+      title: "Restauração e Preservação com Padrão de Fábrica",
+      description: "A clareza das lentes é vital para a eficiência da iluminação automotiva. Através de um processo de polimento técnico e restauração avançada, devolvemos a transparência original ao policarbonato. Finalizamos com proteção UV de alta performance e vitrificação de longa duração, protegendo o conjunto ótico contra o amarelamento e agentes externos de forma definitiva.",
+      iconPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+    },
+  ];
+
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 md:py-28 bg-dark">
-        <div className="container mx-auto px-4 text-center animate-[fade-in-up_1s_ease-out]">
-          <h1 className="font-heading text-4xl md:text-6xl font-extrabold tracking-tight">
-            Iluminação Automotiva de <span className="text-primary">Elite</span>
-          </h1>
-          <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
-            A Arte da Precisão e Performance na Pagani Custom Floripa
-          </p>
-          <p className="mt-6 max-w-4xl mx-auto text-base text-gray-400">
-            A iluminação automotiva deixou de ser um componente meramente funcional para se tornar o ponto de convergência entre segurança extrema e estética de alto padrão. Na Pagani Custom Floripa, compreendemos que cada feixe de luz deve ser projetado com precisão cirúrgica, elevando a experiência de condução ao patamar de excelência que apenas materiais de elite podem proporcionar.
-          </p>
+      <section className="relative bg-black pt-16 pb-24 md:pt-24 md:pb-32 border-b border-white/10 overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-10">
+          <div className="absolute -top-1/2 -right-1/4 w-full h-full bg-[radial-gradient(circle,_rgba(245,231,32,0.2)_0%,_transparent_50%)]"></div>
+          <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-[radial-gradient(circle,_rgba(245,231,32,0.1)_0%,_transparent_60%)]"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <div className="inline-block border border-primary/30 bg-primary/5 px-4 py-1.5 backdrop-blur-sm -skew-x-12">
+              <span className="text-primary font-heading font-bold tracking-widest text-xs uppercase block skew-x-12">
+                Precisão & Performance
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-black text-white leading-none tracking-tighter uppercase">
+              Iluminação <span className="border-text">Automotiva</span> de <span className="text-primary drop-shadow-[0_0_20px_rgba(245,231,32,0.5)]">Elite</span>
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 font-sans max-w-3xl mx-auto font-light">
+              A iluminação automotiva deixou de ser um componente meramente funcional para se tornar o ponto de convergência entre segurança extrema e estética de alto padrão. Na Pagani Custom Floripa, compreendemos que cada feixe de luz deve ser projetado com precisão cirúrgica, elevando a experiência de condução ao patamar de excelência que apenas materiais de elite podem proporcionar.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Main Content Sections */}
-      <div className="container mx-auto px-4 py-16 md:py-24 space-y-20">
+      {/* Services Section */}
+      <section className="py-24 bg-dark-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="flex flex-col group relative bg-dark border border-white/5 p-8 transition-all duration-500 hover:border-primary/50 hover:-translate-y-2 overflow-hidden h-full">
+                <div className="absolute -top-[150px] -right-[150px] w-[300px] h-[300px] bg-[radial-gradient(circle,_rgba(245,231,32,0.1)_0%,_transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-right"></div>
+                <div className="relative z-10 flex-grow flex flex-col">
+                  <FeatureIcon path={service.iconPath} />
+                  <h2 className="text-2xl font-heading font-bold text-white mb-4 tracking-tight uppercase group-hover:text-primary transition-colors">
+                    {service.title}
+                  </h2>
+                  <p className="text-white/85 font-sans text-base leading-relaxed flex-grow">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        {/* Section 1: Projetores Bi-LED */}
-        <section className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4 animate-[fade-in-up_1s_ease-out]">
-            <div className="inline-flex items-center gap-3">
-              <Lightbulb className="w-8 h-8 text-primary" />
-              <h2 className="font-heading text-3xl md:text-4xl font-bold">A Revolução dos Projetores Bi-LED Signature</h2>
+      {/* Authority & Commitment Section */}
+      <section className="py-24 bg-black border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h3 className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter leading-[1.1]">
+                Compromisso com a <span className="border-text-primary">Perfeição</span>
+              </h3>
+              <p className="text-lg text-white/90 font-sans font-light">
+                Líder em Florianópolis e com avaliação máxima de 5.0 estrelas no Google, a Pagani Custom Floripa é o destino de proprietários que não aceitam o básico. Em nosso centro técnico na Costeira do Pirajubaé, cada projeto é tratado como uma obra de arte única, onde o acabamento impecável é a nossa regra absoluta.
+              </p>
+              <blockquote className="border-l-4 border-primary bg-white/5 pl-6 pr-4 py-4 italic text-white/90 text-lg backdrop-blur-sm -skew-x-6">
+                <span className="block skew-x-6">
+                  Pagani Custom Floripa: Onde a tecnologia de iluminação automotiva encontra a precisão absoluta.
+                </span>
+              </blockquote>
             </div>
-            <p className="text-gray-300 leading-relaxed">
-              Nosso serviço de assinatura foca na implementação de projetores Bi-LED de última geração. Com uma temperatura de cor de 6000K, entregamos uma iluminação 300% superior aos sistemas originais, garantindo uma visibilidade sem precedentes em qualquer condição climática.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              O diferencial reside na nossa técnica de instalação <strong className="font-semibold text-white">plug-and-play</strong>, que preserva a integridade elétrica do veículo, aliada a um alinhamento perfeito do feixe e uma vedação técnica que elimina qualquer risco de infiltração.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-[fade-in-right_1.2s_ease-out]">
-            <div className="bg-dark-gray p-6 rounded-lg border border-gray-800">
-              <h3 className="font-heading font-bold text-lg text-primary">Visibilidade Extrema</h3>
-              <p className="mt-2 text-gray-400 text-sm">Iluminação 300% superior aos sistemas de fábrica.</p>
-            </div>
-            <div className="bg-dark-gray p-6 rounded-lg border border-gray-800">
-              <h3 className="font-heading font-bold text-lg text-primary">Instalação Segura</h3>
-              <p className="mt-2 text-gray-400 text-sm">Técnica plug-and-play que preserva a garantia do veículo.</p>
-            </div>
-            <div className="bg-dark-gray p-6 rounded-lg border border-gray-800">
-              <h3 className="font-heading font-bold text-lg text-primary">Alinhamento Perfeito</h3>
-              <p className="mt-2 text-gray-400 text-sm">Feixe de luz ajustado com precisão para máxima eficiência.</p>
-            </div>
-            <div className="bg-dark-gray p-6 rounded-lg border border-gray-800">
-              <h3 className="font-heading font-bold text-lg text-primary">Vedação Técnica</h3>
-              <p className="mt-2 text-gray-400 text-sm">Proteção total contra umidade e infiltração.</p>
+            <div className="relative h-[400px] w-full border border-white/10 group overflow-hidden">
+              <div className="absolute inset-0 bg-dark-gray"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(255,255,255,0.05),rgba(255,255,255,0))]"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+                <span className="text-7xl lg:text-8xl text-primary font-heading font-black drop-shadow-[0_0_15px_rgba(245,231,32,0.4)]">5.0</span>
+                <span className="mt-2 text-xl font-heading font-bold text-white uppercase tracking-widest">Avaliação Máxima</span>
+                <span className="mt-1 text-sm text-white/70 font-sans">no Google</span>
+                <div className="mt-8 h-px w-20 bg-primary/50"></div>
+              </div>
+              <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary/50 group-hover:border-primary transition-colors"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary/50 group-hover:border-primary transition-colors"></div>
             </div>
           </div>
-        </section>
-
-        {/* Section 2: Customização Ótica */}
-        <section className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4 md:order-2 animate-[fade-in-up_1s_ease-out]">
-            <div className="inline-flex items-center gap-3">
-              <Paintbrush className="w-8 h-8 text-primary" />
-              <h2 className="font-heading text-3xl md:text-4xl font-bold">Customização Ótica e Assinatura Luminosa</h2>
-            </div>
-            <p className="text-gray-300 leading-relaxed">
-              Para aqueles que buscam exclusividade, oferecemos soluções de customização que redefinem a identidade visual do carro. Especialistas em acabamentos sofisticados, executamos a <strong className="font-semibold text-white">Máscara Negra</strong> com pintura interna em Black Piano ou fosco, além da instalação de <strong className="font-semibold text-white">DRL (Daytime Running Lights)</strong> com seta sequencial dual-color.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Nossos <strong className="font-semibold text-white">Angel Eyes (Halo Rings)</strong> são inspirados na sofisticação das marcas premium alemãs, conferindo uma assinatura luminosa única e imponente.
-            </p>
-          </div>
-          <div className="md:order-1 animate-[fade-in-right_1.2s_ease-out]">
-             <div className="bg-dark-gray p-8 rounded-lg border border-gray-800 space-y-4">
-                <h3 className="font-heading text-xl font-bold text-white">Nossos Acabamentos Exclusivos:</h3>
-                <ul className="list-none space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 mt-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-300"><strong>Máscara Negra:</strong> Acabamento em Black Piano ou fosco para um visual agressivo e elegante.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 mt-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-300"><strong>DRL com Seta Sequencial:</strong> Modernidade e segurança com iluminação diurna e setas dinâmicas.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 mt-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-300"><strong>Angel Eyes (Halo Rings):</strong> Uma assinatura luminosa icônica, inspirada no design europeu.</span>
-                  </li>
-                </ul>
-             </div>
-          </div>
-        </section>
-
-        {/* Section 3: Restauração */}
-        <section className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4 animate-[fade-in-up_1s_ease-out]">
-            <div className="inline-flex items-center gap-3">
-              <Sparkles className="w-8 h-8 text-primary" />
-              <h2 className="font-heading text-3xl md:text-4xl font-bold">Restauração e Preservação com Padrão de Fábrica</h2>
-            </div>
-            <p className="text-gray-300 leading-relaxed">
-              A clareza das lentes é vital para a eficiência da iluminação automotiva. Através de um processo de polimento técnico e restauração avançada, devolvemos a transparência original ao policarbonato.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              Finalizamos com <strong className="font-semibold text-white">proteção UV de alta performance</strong> e <strong className="font-semibold text-white">vitrificação de longa duração</strong>, protegendo o conjunto ótico contra o amarelamento e agentes externos de forma definitiva.
-            </p>
-          </div>
-          <div className="flex justify-center items-center animate-[fade-in-right_1.2s_ease-out]">
-            <div className="relative p-8 bg-dark-gray rounded-lg border border-gray-800 w-full max-w-md">
-                <ShieldCheck className="absolute -top-6 -left-6 w-16 h-16 text-primary bg-dark-gray p-2 rounded-full border-4 border-black" />
-                <h3 className="font-heading text-xl font-bold text-white">Proteção Definitiva</h3>
-                <p className="mt-2 text-gray-300">Nosso processo de vitrificação cria uma barreira duradoura que preserva a clareza e o valor dos seus faróis, garantindo performance e estética por muito mais tempo.</p>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      {/* Commitment Section */}
-      <section className="bg-dark py-20 md:py-24">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h2 className="font-heading text-3xl md:text-4xl font-bold">Compromisso com a Perfeição</h2>
-          <p className="mt-4 text-gray-300 leading-relaxed">
-            Líder em Florianópolis e com avaliação máxima de <strong className="text-white">5.0 estrelas no Google</strong>, a Pagani Custom Floripa é o destino de proprietários que não aceitam o básico. Em nosso centro técnico na Costeira do Pirajubaé, cada projeto é tratado como uma obra de arte única, onde o acabamento impecável é a nossa regra absoluta.
-          </p>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold">Agende sua Transformação</h2>
-          <p className="mt-3 max-w-2xl mx-auto text-gray-300">
+      <section className="py-24 bg-dark">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h4 className="text-3xl md:text-4xl font-heading font-black text-white uppercase tracking-tighter">
+            Agende sua <span className="text-primary">Transformação</span>
+          </h4>
+          <p className="mt-4 text-lg text-white/85 font-sans max-w-2xl mx-auto">
             Eleve o padrão de segurança e estética do seu veículo com quem é autoridade no mercado premium.
           </p>
-          <div className="mt-8">
-            <a
-              href="https://api.whatsapp.com/send?phone=5548000000000&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20ilumina%C3%A7%C3%A3o%20automotiva."
+          <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-8 text-white/90">
+            <div className="text-left sm:text-right">
+              <p className="font-bold">📍 Costeira do Pirajubaé, Florianópolis</p>
+            </div>
+            <div className="h-12 w-px bg-white/20 hidden sm:block"></div>
+            <div className="text-left">
+              <p className="font-bold">⏰ Seg-Sex (08h-18h) | Sáb (08h-12h)</p>
+            </div>
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link
+              href="https://wa.me/554832495596?text=Olá! Gostaria de agendar uma avaliação para um projeto de iluminação automotiva."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-primary text-black font-heading font-bold py-4 px-10 rounded-lg text-lg hover:bg-primary-hover transition-colors duration-300"
+              className="bg-primary text-black font-heading font-bold text-base tracking-widest uppercase px-10 py-4 text-center hover:bg-white transition-colors duration-300 transform -skew-x-12 group"
             >
-              Falar no WhatsApp
-            </a>
+              <span className="block skew-x-12 group-hover:scale-105 transition-transform">
+                Falar com Especialista
+              </span>
+            </Link>
           </div>
         </div>
       </section>
     </>
   );
 }
-
-// Componente Footer de fallback caso o real não esteja importado
-const Footer = () => (
-  <footer className="bg-black py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-    <p>© {new Date().getFullYear()} Pagani Custom. Todos os direitos reservados.</p>
-  </footer>
-);

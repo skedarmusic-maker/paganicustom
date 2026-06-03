@@ -38,6 +38,12 @@ export default function ServicosPage() {
       desc: "Anéis luminosos de LED Crystal/RGB inspirados nas montadoras alemãs para uma assinatura luminosa exclusiva.",
       link: "/angel-eyes",
       image: "/images/angels.jpg" // Updated with project image
+    },
+    {
+      title: "Conserto de DRL Amarelado",
+      desc: "Recuperação especializada do DRL de Audi, VW, BMW e outros. Substituição de chips de LED e condutor acrílico.",
+      link: "/conserto-drl-amarelado-audi-vw",
+      image: "/images/drl.jpeg"
     }
   ];
 

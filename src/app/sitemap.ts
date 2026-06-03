@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/mascara-negra",
     "/projetor-biled",
     "/restauracao-de-farol",
+    "/conserto-drl-amarelado-audi-vw",
   ];
 
   return routes.map((route) => ({
